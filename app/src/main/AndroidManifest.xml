@@ -29,6 +29,9 @@
             android:windowSoftInputMode="stateAlwaysHidden">
 
         </activity>
+        <activity android:name=".Water"
+            android:label="Water">
+        </activity>
 
     </application>
 </manifest>

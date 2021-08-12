@@ -15,15 +15,19 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button scanBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Button scanBtn;
+        Button scanBtn1;
+        Button InsertNum;
         scanBtn = findViewById(R.id.scanBtn);
         scanBtn.setOnClickListener(this);
+        scanBtn1 = findViewById(R.id.scanBtn1);
+        InsertNum = findViewById(R.id.InsertNum);
     }
 
 
@@ -46,23 +50,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
         if (result != null){
             if (result.getContents()!=null){
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setMessage(result.getContents());
-                builder.setTitle("스캔 결과");
-                builder.setPositiveButton("다시 스캔", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        scanCode();
-                    }
-                }).setNegativeButton("확인", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finish();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-
+                //AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                //builder.setMessage(result.getContents());
+                //builder.setTitle("스캔 결과");
+                //builder.setPositiveButton("다시 스캔", new DialogInterface.OnClickListener() {
+                    //@Override
+                    //public void onClick(DialogInterface dialog, int which) {
+                        //scanCode();
+                    //}
+                //}).setNegativeButton("확인", new DialogInterface.OnClickListener() {
+                    //@Override
+                    //public void onClick(DialogInterface dialog, int which) {
+                        //finish();
+                   // }
+               // });
+                //AlertDialog dialog = builder.create();
+               // dialog.show();
+                Intent intent = new Intent(MainActivity.this,Water.class);
+                startActivity(intent);
 
             }
             else {
