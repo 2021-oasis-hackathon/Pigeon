@@ -24,6 +24,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         scanBtn = findViewById(R.id.scanBtn);
         scanBtn.setOnClickListener(this);
+
+        Button button_google = (Button) findViewById(R.id.btn_google);
+        button_google.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                System.out.println("클릭");
+            }
+        });
     }
 
 
