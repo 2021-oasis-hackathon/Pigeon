@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Barcode">
         <activity
+            android:name=".data_ouput"
+            android:exported="true" />
+        <activity
             android:name=".loginResult"
             android:exported="true" />
         <activity
