@@ -37,7 +37,7 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, GoogleApiClient.OnConnectionFailedListener {
 
-    private static final int RC_SIGN_IN =10; //구글로그인 결과 코드
+    private static final int RC_SIGN_IN =100; //구글로그인 결과 코드
     Button scanBtn;
     private GoogleApiClient mGoogleApiClient; //API클라이언트
     private FirebaseAuth mAuth; //파이어베이스 인증 객체

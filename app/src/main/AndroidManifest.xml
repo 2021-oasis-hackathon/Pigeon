@@ -16,15 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Barcode">
         <activity
-            android:name=".data_ouput"
-            android:exported="true" />
-        <activity
-            android:name=".loginResult"
-            android:exported="true" />
-        <activity
-            android:name="com.Google_Login"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
