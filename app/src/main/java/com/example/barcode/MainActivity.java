@@ -30,6 +30,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button scanBtn;
     private GoogleApiClient mGoogleApiClient; //API클라이언트
     private FirebaseAuth mAuth; //파이어베이스 인증 객체
+    private DatabaseReference mDatabaseRef; // 실시간 데이터베이스
     private SignInButton btn_google; //구글 로그인 버튼
 // ...
 // Initialize Firebase Auth
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .build();
 
         mAuth = FirebaseAuth.getInstance(); //파이어베이스 인증 객체 초기화
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference("Pigeon");
 
         btn_google = findViewById(R.id.btn_google);
         btn_google.setOnClickListener(new View.OnClickListener(){
@@ -98,6 +102,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){//로그인 성공
                             Toast.makeText(MainActivity.this,"로그인 성공",Toast.LENGTH_SHORT).show();
+                //          FirebaseUser firebaseUser = mAuth.getCurrentUser();
+                            UserReward reward = new UserReward();
+                            reward.setIdToken(account.getId());
+
+                            //setValue: 데이터베이스에 insert
+                            mDatabaseRef.child("UserReward").child(account.getId()).setValue(reward);
+
                         }else{
                             Toast.makeText(MainActivity.this,"Login Failed",Toast.LENGTH_SHORT).show();
                         }

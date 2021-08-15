@@ -35,6 +35,7 @@ public class data_output extends AppCompatActivity {
         dataView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         dataView.setLayoutManager(layoutManager);
+
         arrayList = new ArrayList<>();//유저 객체를 담을 리스트
 
         database = FirebaseDatabase.getInstance();//파이어베이스 데이터베이스 연동
