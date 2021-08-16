@@ -2066,6 +2066,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_google
 id btn_holder
+id btn_rew
 id buttonPanel
 id button_continue
 id button_create
@@ -2479,6 +2480,7 @@ id triangle
 id trouble_signing_in
 id trouble_signing_in_possible_fixes
 id tv_result
+id tv_reward
 id unchecked
 id uniform
 id unlabeled
