@@ -37,7 +37,7 @@ public class ShowList extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         arrayList = new ArrayList<>(); //trash 객체 담을 어레이 리스트(어댑터 쪽ㅇ로 날림)
 
-        database = FirebaseDatabase.getInstance(); // 파이어베이스 데이터베이스 연동
+        database = FirebaseDatabase.getInstance(); // 파이어베이스 데이터  베이스 연동
         databaseReference = database.getReference("trash");//db테이블 연결
         databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -55,10 +55,18 @@ public class ShowList extends AppCompatActivity {
                     }
 
                 }
+
                 if (count==0) {
                     Intent intent = new Intent(getApplicationContext(),CheckInsertAct.class);
                     startActivity(intent);
                 }
+                // 새창띄우고 정보입력 코드
+                /**
+                et_test = findViewById(R.id.et_test)
+                레이아웃에서 설정해놓은 텍스트 박스 id 불러오고
+                str = et_test.getText().toString();
+                getText한 값을 문자열로 저장
+                **/
                 adapter.notifyDataSetChanged();//리스트 저장 및 새로고침
             }
 

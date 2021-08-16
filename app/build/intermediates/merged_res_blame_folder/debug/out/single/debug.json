@@ -8,20 +8,20 @@
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_menu.xml.flat",
-        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_menu.xml"
-    },
-    {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_menu.xml.flat",
+        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_menu.xml"
     },
     {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_checkinsert.xml.flat",
@@ -60,12 +60,12 @@
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",

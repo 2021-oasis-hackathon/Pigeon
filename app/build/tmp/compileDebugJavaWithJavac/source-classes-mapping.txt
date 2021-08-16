@@ -9,8 +9,12 @@ com/example/barcode/MenuActivity.java
  com.example.barcode.MenuActivity
  com.example.barcode.MenuActivity$1
  com.example.barcode.MenuActivity$2
+ com.example.barcode.MenuActivity$3
+ com.example.barcode.MenuActivity$4
 com/example/barcode/MainActivity.java
  com.example.barcode.MainActivity
+ com.example.barcode.MainActivity$1
+ com.example.barcode.MainActivity$2
 com/example/barcode/trash.java
  com.example.barcode.trash
 com/example/barcode/CustomAdapter.java
