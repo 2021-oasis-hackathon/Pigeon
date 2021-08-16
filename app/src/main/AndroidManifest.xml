@@ -33,6 +33,10 @@
             android:windowSoftInputMode="stateAlwaysHidden">
 
         </activity>
+        <activity android:name=".MenuActivity">
+        </activity>
+        <activity android:name=".ShowList">
+        </activity>
     </application>
 
 </manifest>

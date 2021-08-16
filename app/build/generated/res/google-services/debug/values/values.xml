@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">883370904889-r4sa0qqr3pq0pivbd4krv8a6i8fmmp9t.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://pigeon-53d62-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">883370904889</string>
+    <string name="google_api_key" translatable="false">AIzaSyCstfiTJfnYoyXf3Hpz2VmHHHqVxzIUpkg</string>
+    <string name="google_app_id" translatable="false">1:883370904889:android:3e676656b04cfe92bdace8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCstfiTJfnYoyXf3Hpz2VmHHHqVxzIUpkg</string>
+    <string name="google_storage_bucket" translatable="false">pigeon-53d62.appspot.com</string>
+    <string name="project_id" translatable="false">pigeon-53d62</string>
+</resources>

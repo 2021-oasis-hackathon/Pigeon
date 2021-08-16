@@ -1,0 +1,20 @@
+com/example/barcode/ShowList.java
+ com.example.barcode.ShowList
+ com.example.barcode.ShowList$1
+com/example/barcode/CaptureAct.java
+ com.example.barcode.CaptureAct
+com/example/barcode/MenuActivity.java
+ com.example.barcode.MenuActivity
+ com.example.barcode.MenuActivity$1
+ com.example.barcode.MenuActivity$2
+com/example/barcode/MainActivity.java
+ com.example.barcode.MainActivity
+com/example/barcode/trash.java
+ com.example.barcode.trash
+com/example/barcode/CustomAdapter.java
+ com.example.barcode.CustomAdapter
+ com.example.barcode.CustomAdapter$CustomViewHolder
+com/example/barcode/BuildConfig.java
+ com.example.barcode.BuildConfig
+com/example/barcode/TakeBarcode.java
+ com.example.barcode.TakeBarcode

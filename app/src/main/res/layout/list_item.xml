@@ -1,51 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/iv_image"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_margin="5dp"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_image">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/itemimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="제품명" />
+            android:layout_margin="15dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_quality"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="재질" />
+            <TextView
+                android:id="@+id/barcodenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="바코드 번호"
+                android:layout_margin="5dp"/>
 
-        <TextView
-            android:id="@+id/tv_way"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="분리수거 방법" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="물품명"
+                android:layout_margin="5dp"/>
 
+            <TextView
+                android:id="@+id/material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="재질"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/recycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="분리수거법"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
