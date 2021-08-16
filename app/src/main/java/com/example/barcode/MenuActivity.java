@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -14,6 +15,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener{
+    private TextView tv_result;
     Button scanBtn;
 
     @Override
@@ -22,6 +24,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_menu);
         scanBtn = findViewById(R.id.scanBtn);
         scanBtn.setOnClickListener(this);
+
+        Intent intent = getIntent();
+        String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
+
+        tv_result = findViewById(R.id.tv_result);
+        tv_result.setText(id); //id를 텍스트 뷰에 저장
     }
 
     private void scanCode(){
