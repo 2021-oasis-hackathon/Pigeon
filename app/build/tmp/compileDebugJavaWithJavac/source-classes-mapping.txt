@@ -1,5 +1,5 @@
-com/example/barcode/CheckInsertAct.java
- com.example.barcode.CheckInsertAct
+com/example/barcode/TakeBarcode.java
+ com.example.barcode.TakeBarcode
 com/example/barcode/ShowList.java
  com.example.barcode.ShowList
  com.example.barcode.ShowList$1
@@ -22,8 +22,8 @@ com/example/barcode/CustomAdapter.java
  com.example.barcode.CustomAdapter$CustomViewHolder
 com/example/barcode/BuildConfig.java
  com.example.barcode.BuildConfig
-com/example/barcode/TakeBarcode.java
- com.example.barcode.TakeBarcode
+com/example/barcode/CheckInsertAct.java
+ com.example.barcode.CheckInsertAct
 com/example/barcode/addrecycle.java
  com.example.barcode.addrecycle
 com/example/barcode/InsertRecycleAct.java
