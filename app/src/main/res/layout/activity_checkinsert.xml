@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckInsertAct">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp"
+        android:text="앗, 분리수거 정보가 없어요, 없다고." />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        android:onClick="insert"
+        android:text="분리수거 정보 입력하기" />
+
+    <Button
+        android:id="@+id/backtobarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="300dp"
+        android:layout_toRightOf="@+id/insert"
+        android:layout_weight="1"
+        android:onClick="backtoscan"
+        android:text="바코드 다시 스캔하기" />
+
+
+</RelativeLayout>

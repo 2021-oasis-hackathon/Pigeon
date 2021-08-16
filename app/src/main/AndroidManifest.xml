@@ -37,6 +37,10 @@
         </activity>
         <activity android:name=".ShowList">
         </activity>
+        <activity android:name=".CheckInsertAct">
+        </activity>
+        <activity android:name=".InsertRecycleAct">
+        </activity>
     </application>
 
 </manifest>

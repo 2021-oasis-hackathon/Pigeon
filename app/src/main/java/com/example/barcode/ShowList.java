@@ -1,5 +1,6 @@
 package com.example.barcode;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -29,7 +30,6 @@ public class ShowList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_show);
-        String num="123456789";
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true); //기존 성능 강화
@@ -44,13 +44,20 @@ public class ShowList extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 //파이어베이스 데이터베이스의 데이터를 받아오는 곳
                 arrayList.clear(); // 기존 배열리스트가 존재하지 않게 초기화
+                int count=0;
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) { //반복문으로 데이터리스트 추출
                     trash trash1 = snapshot.getValue(trash.class); //db로부터 가져온 애를 trash에 쏨
                     if(TakeBarcode.scanedBarcode.equals(trash1.barcodenum)) {
                          // 담은 데이터들을 배열리스트에 넣고 리사이클러뷰로 보낼 준비
                         arrayList.add(trash1);
+                        count=1;
+                        break;
                     }
 
+                }
+                if (count==0) {
+                    Intent intent = new Intent(getApplicationContext(),CheckInsertAct.class);
+                    startActivity(intent);
                 }
                 adapter.notifyDataSetChanged();//리스트 저장 및 새로고침
             }

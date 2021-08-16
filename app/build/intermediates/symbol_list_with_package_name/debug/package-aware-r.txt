@@ -1977,6 +1977,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backtobarcode
 id barcodenum
 id barrier
 id baseline
@@ -1989,6 +1990,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_regibunri
 id buttonPanel
 id cache_measures
 id cancel_action
@@ -2071,6 +2073,9 @@ id end_padder
 id enter
 id enterAlways
 id enterAlwaysCollapsed
+id et_howbunri
+id et_pdId
+id et_pdmat
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2114,6 +2119,7 @@ id image
 id immediateStop
 id included
 id info
+id insert
 id invisible
 id inward
 id italic
@@ -2328,6 +2334,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2456,6 +2465,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_checkinsert
+layout activity_insert
 layout activity_main
 layout activity_menu
 layout custom_dialog

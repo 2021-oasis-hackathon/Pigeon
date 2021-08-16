@@ -24,8 +24,16 @@
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_checkinsert.xml.flat",
+        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_checkinsert.xml"
+    },
+    {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_insert.xml.flat",
+        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_insert.xml"
     },
     {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_list_item.xml.flat",

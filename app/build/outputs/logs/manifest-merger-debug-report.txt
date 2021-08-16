@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\김민주\.gradle\caches\transforms-3\fb168b44b05705a805528f1c42f7e2f6\transformed\constraintlayout-2.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\김민주\.gradle\caches\transforms-3\2fb21fbcddcb4a1a19c9cd01cfb49ddb\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
@@ -57,20 +57,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\김민주\.gradl
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\김민주\.gradle\caches\transforms-3\11a446e7d11d9332c5acc6192805398e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\김민주\.gradle\caches\transforms-3\e0704842989cea6c82cf2a91963d9437\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\김민주\.gradle\caches\transforms-3\bcde78bc88dd626eb99fc345b357b7d4\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml
 		INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml
-		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml
-		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:2:11-69
@@ -93,7 +93,7 @@ MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.g
 	android:name
 		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:8:19-67
 application
-ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:10:5-40:19
+ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:10:5-44:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\김민주\.gradle\caches\transforms-3\fb168b44b05705a805528f1c42f7e2f6\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
@@ -172,6 +172,14 @@ activity#com.example.barcode.ShowList
 ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:38:9-39:20
 	android:name
 		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:38:19-43
+activity#com.example.barcode.CheckInsertAct
+ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:40:9-41:20
+	android:name
+		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:40:19-49
+activity#com.example.barcode.InsertRecycleAct
+ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:42:9-43:20
+	android:name
+		ADDED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:42:19-51
 uses-sdk
 INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml

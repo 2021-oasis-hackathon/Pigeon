@@ -61,6 +61,10 @@
         </activity>
         <activity android:name="com.example.barcode.ShowList" >
         </activity>
+        <activity android:name="com.example.barcode.CheckInsertAct" >
+        </activity>
+        <activity android:name="com.example.barcode.InsertRecycleAct" >
+        </activity>
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

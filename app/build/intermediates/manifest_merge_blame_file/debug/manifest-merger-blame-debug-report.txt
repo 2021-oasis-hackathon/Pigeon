@@ -56,7 +56,7 @@
 32-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:43:9-33
 33
 34    <application
-34-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:10:5-40:19
+34-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:10:5-44:19
 35        android:allowBackup="true"
 35-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:11:9-35
 36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -111,66 +111,74 @@
 62-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:38:9-39:20
 62-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:38:19-43
 63        </activity>
-64
-65        <service
-65-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:29:9-35:19
-66            android:name="com.google.firebase.components.ComponentDiscoveryService"
-66-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:30:13-84
-67            android:directBootAware="true"
-67-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
-68            android:exported="false" >
-68-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:31:13-37
-69            <meta-data
-69-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:32:13-34:85
-70                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-70-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:33:17-109
-71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:34:17-82
-72        </service>
-73
-74        <activity
-74-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
-75            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-75-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
-76            android:clearTaskOnLaunch="true"
-76-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
-77            android:screenOrientation="sensorLandscape"
-77-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
-78            android:stateNotNeeded="true"
-78-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
-79            android:theme="@style/zxing_CaptureTheme"
-79-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
-80            android:windowSoftInputMode="stateAlwaysHidden" />
-80-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
-81
-82        <provider
-82-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
-83            android:name="com.google.firebase.provider.FirebaseInitProvider"
-83-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
-84            android:authorities="com.example.barcode.firebaseinitprovider"
-84-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
-85            android:directBootAware="true"
-85-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
-86            android:exported="false"
-86-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
-87            android:initOrder="100" />
-87-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
-88
-89        <activity
-89-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\김민주\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-90            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-90-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\김민주\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-91            android:exported="false"
-91-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\김민주\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-92            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-92-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\김민주\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-93
-94        <meta-data
-94-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\김민주\.gradle\caches\transforms-3\d66fc2503d88e810862410f94e50b62e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-95            android:name="com.google.android.gms.version"
-95-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\김민주\.gradle\caches\transforms-3\d66fc2503d88e810862410f94e50b62e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-96            android:value="@integer/google_play_services_version" />
-96-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\김민주\.gradle\caches\transforms-3\d66fc2503d88e810862410f94e50b62e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-97    </application>
-98
-99</manifest>
+64        <activity android:name="com.example.barcode.CheckInsertAct" >
+64-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:40:9-41:20
+64-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:40:19-49
+65        </activity>
+66        <activity android:name="com.example.barcode.InsertRecycleAct" >
+66-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:42:9-43:20
+66-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:42:19-51
+67        </activity>
+68
+69        <service
+69-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:29:9-35:19
+70            android:name="com.google.firebase.components.ComponentDiscoveryService"
+70-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:30:13-84
+71            android:directBootAware="true"
+71-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+72            android:exported="false" >
+72-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:31:13-37
+73            <meta-data
+73-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:32:13-34:85
+74                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+74-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:33:17-109
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-database:20.0.1] C:\Users\김민주\.gradle\caches\transforms-3\7b400ea217a8bf9c711ec34916c87208\transformed\jetified-firebase-database-20.0.1\AndroidManifest.xml:34:17-82
+76        </service>
+77
+78        <activity
+78-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:46:9-52:63
+79            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+79-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:47:13-74
+80            android:clearTaskOnLaunch="true"
+80-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:48:13-45
+81            android:screenOrientation="sensorLandscape"
+81-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:49:13-56
+82            android:stateNotNeeded="true"
+82-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:50:13-42
+83            android:theme="@style/zxing_CaptureTheme"
+83-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:51:13-54
+84            android:windowSoftInputMode="stateAlwaysHidden" />
+84-->[com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\김민주\.gradle\caches\transforms-3\a7e53a33f649f49f4cd4864e444a2839\transformed\jetified-zxing-android-embedded-3.4.0\AndroidManifest.xml:52:13-60
+85
+86        <provider
+86-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+87            android:name="com.google.firebase.provider.FirebaseInitProvider"
+87-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+88            android:authorities="com.example.barcode.firebaseinitprovider"
+88-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+89            android:directBootAware="true"
+89-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+90            android:exported="false"
+90-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+91            android:initOrder="100" />
+91-->[com.google.firebase:firebase-common:20.0.0] C:\Users\김민주\.gradle\caches\transforms-3\ed8893f1a326696110e4d10af8917bc2\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+92
+93        <activity
+93-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\김민주\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+94            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+94-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\김민주\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+95            android:exported="false"
+95-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\김민주\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+96-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\김민주\.gradle\caches\transforms-3\b5289ac9a641f59dd763ec5754e962f8\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+97
+98        <meta-data
+98-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\김민주\.gradle\caches\transforms-3\d66fc2503d88e810862410f94e50b62e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+99            android:name="com.google.android.gms.version"
+99-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\김민주\.gradle\caches\transforms-3\d66fc2503d88e810862410f94e50b62e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+100            android:value="@integer/google_play_services_version" />
+100-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\김민주\.gradle\caches\transforms-3\d66fc2503d88e810862410f94e50b62e\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+101    </application>
+102
+103</manifest>
