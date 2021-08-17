@@ -28,8 +28,10 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
     private DatabaseReference mDatabaseRef; // 실시간 데이터베이스
 
-    Button scanBtn,btn_rew;
+    Button scanBtn;
     int count=0;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,30 +39,21 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("User");
-
-        Intent intent = getIntent();
-        String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
-        int reward = intent.getIntExtra("reward", 0);
-        Toast.makeText(MenuActivity.this, String.format("메뉴 액티비티 : %d",reward),Toast.LENGTH_SHORT).show();
-
-
         scanBtn = findViewById(R.id.scanBtn);
         scanBtn.setOnClickListener(this);
-
-        btn_rew = findViewById(R.id.btn_rew);
-        btn_rew.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) { //리워드 축적하는 코드
-                Intent intent = new Intent(getApplicationContext(),Reward.class);
-                intent.putExtra("id",id); //uri라는 객체로 가져옴
-                intent.putExtra("reward",reward);
-                Toast.makeText(MenuActivity.this, String.format("메뉴에서 보낼때 아이디 : %s\n메뉴에서 보낼때 리워드 : %d",id,reward),Toast.LENGTH_SHORT).show();
-                startActivity(intent);
-            }
-        });
     }
 
+    Intent intent = getIntent();
+    String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
+    int reward = intent.getIntExtra("reward", 0);
+
+    public void onClick1(View view) { //리워드 축적하는 코드
+        Intent intent = new Intent(getApplicationContext(),Reward.class);
+        intent.putExtra("id",id); //uri라는 객체로 가져옴
+        intent.putExtra("reward",reward);
+        Toast.makeText(MenuActivity.this, String.format("메뉴에서 보낼때 아이디 : %s\n메뉴에서 보낼때 리워드 : %d",id,reward),Toast.LENGTH_SHORT).show();
+        startActivity(intent);
+    }
     private void scanCode(){
         IntentIntegrator integrator = new IntentIntegrator(this);
         integrator.setCaptureActivity(CaptureAct.class);
