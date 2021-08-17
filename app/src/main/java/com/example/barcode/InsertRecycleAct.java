@@ -72,7 +72,6 @@ public class InsertRecycleAct extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
                 intent.putExtra("id",id);
                 intent.putExtra("reward",reward[0]);
-                Toast.makeText(InsertRecycleAct.this, String.format("리워드 올리고 다시 메뉴로 보내는 값 : %d",reward[0]),Toast.LENGTH_SHORT).show();
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
                 finish();
