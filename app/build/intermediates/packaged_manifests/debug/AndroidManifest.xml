@@ -44,6 +44,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Barcode" >
         <activity
+            android:name="com.example.barcode.TypingBarcodenumAct"
+            android:exported="true" />
+        <activity
             android:name="com.example.barcode.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -56,16 +59,11 @@
             android:name="com.example.barcode.CaptureAct"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
-            android:windowSoftInputMode="stateAlwaysHidden" >
-        </activity>
-        <activity android:name="com.example.barcode.MenuActivity" >
-        </activity>
-        <activity android:name="com.example.barcode.ShowList" >
-        </activity>
-        <activity android:name="com.example.barcode.CheckInsertAct" >
-        </activity>
-        <activity android:name="com.example.barcode.InsertRecycleAct" >
-        </activity>
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.example.barcode.MenuActivity" />
+        <activity android:name="com.example.barcode.ShowList" />
+        <activity android:name="com.example.barcode.CheckInsertAct" />
+        <activity android:name="com.example.barcode.InsertRecycleAct" />
 
         <meta-data
             android:name="com.google.android.gms.version"

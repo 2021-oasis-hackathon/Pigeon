@@ -52,6 +52,10 @@
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_typing_barcode.xml.flat",
+        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_typing_barcode.xml"
+    },
+    {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },

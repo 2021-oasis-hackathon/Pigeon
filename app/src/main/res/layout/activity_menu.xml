@@ -38,14 +38,24 @@
         android:layout_marginEnd="100dp"
         android:text="내 리워드"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <Button
         android:id="@+id/btn_rew"
-        android:layout_width="wrap_content"
+        android:layout_width="221dp"
         android:layout_height="wrap_content"
         android:text="리워드 적립"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_typing" />
+
+    <Button
+        android:id="@+id/btn_typing"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:text="바코드 번호 입력하기"
+        android:onClick="typingbarcode"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scanBtn" />

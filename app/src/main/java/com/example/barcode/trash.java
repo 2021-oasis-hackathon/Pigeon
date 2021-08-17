@@ -2,7 +2,7 @@ package com.example.barcode;
 
 public class trash {
     private String itemimage;
-    public String barcodenum; //안되면 int
+    public String barcodenum;
     private String name;
     private String material;
     private String recycle;

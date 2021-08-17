@@ -49,7 +49,7 @@ public class InsertRecycleAct extends AppCompatActivity {
                 String Recycle = recycle.getText().toString();
 
                 addrecycle insertedthing = new addrecycle();
-                addrecycle.setBarcodenum(TakeBarcode.scanedBarcode);
+                addrecycle.setBarcodenum(takebarcode.scanedBarcode);
                 addrecycle.setName(Name);
                 addrecycle.setMaterial(Material);
                 addrecycle.setRecycle(Recycle);

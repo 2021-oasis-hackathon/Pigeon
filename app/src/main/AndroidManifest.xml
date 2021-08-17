@@ -15,8 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Barcode">
-
-
+        <activity
+            android:name=".TypingBarcodenumAct"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -30,17 +31,12 @@
             android:name=".CaptureAct"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".ShowList"></activity>
+        <activity android:name=".CheckInsertAct"></activity>
+        <activity android:name=".InsertRecycleAct"></activity>
 
-        </activity>
-        <activity android:name=".MenuActivity">
-        </activity>
-        <activity android:name=".ShowList">
-        </activity>
-        <activity android:name=".CheckInsertAct">
-        </activity>
-        <activity android:name=".InsertRecycleAct">
-        </activity>
     </application>
 
 </manifest>

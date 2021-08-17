@@ -92,7 +92,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         if (result != null){
             if (result.getContents()!=null){
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                TakeBarcode.scanedBarcode=result.getContents();
+                takebarcode.scanedBarcode=result.getContents();
                 builder.setMessage(result.getContents());
                 builder.setTitle("스캔 결과");
                 builder.setPositiveButton("다시 스캔", new DialogInterface.OnClickListener() {
@@ -117,4 +117,10 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             super.onActivityResult(requestCode,resultCode,data);
         }
     }
+
+    public void typingbarcode(View view){
+        Intent intent = new Intent(getApplicationContext(),TypingBarcodenumAct.class);
+        startActivity(intent);
+    }
+
 }

@@ -2069,6 +2069,7 @@ id btn_google
 id btn_holder
 id btn_regibunri
 id btn_rew
+id btn_typing
 id buttonPanel
 id button_continue
 id button_create
@@ -2102,6 +2103,7 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id confirm
 id confirm_button
 id confirmation_code
 id confirmation_code_layout
@@ -2490,6 +2492,7 @@ id trouble_signing_in
 id trouble_signing_in_possible_fixes
 id tv_result
 id tv_reward
+id typebarcode
 id unchecked
 id uniform
 id unlabeled
@@ -2603,6 +2606,7 @@ layout activity_checkinsert
 layout activity_insert
 layout activity_main
 layout activity_menu
+layout activity_typing_barcode
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
