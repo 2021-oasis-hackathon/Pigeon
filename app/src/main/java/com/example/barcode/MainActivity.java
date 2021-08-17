@@ -87,13 +87,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             if(result.isSuccess()){ //인증 성공
                 GoogleSignInAccount account = result.getSignInAccount(); //구글 로그인 정보 담음
-                final int[] rew = {0};
+                int[] rew = {0};
                 mDatabaseRef.child(account.getId()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<DataSnapshot> task) {
                         if (task.isSuccessful()) {
                             if(String.valueOf(task.getResult().getValue())=="null") {
                                 mDatabaseRef.child(account.getId()).setValue(0);
+                                rew[0]=0;
                             }
                             else{
                                 rew[0] = Integer.parseInt(String.valueOf(task.getResult().getValue()));
@@ -117,6 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void onComplete(@NonNull Task<AuthResult> task) { //로그인이 실제로 성공했는가
                         if(task.isSuccessful()){  //로그인 성공
                             Toast.makeText(MainActivity.this,"로그인 성공",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, String.format("메인 : %d",rew),Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(),MenuActivity.class);
                             intent.putExtra("id",account.getId()); //uri라는 객체로 가져옴
                             intent.putExtra("reward",rew);

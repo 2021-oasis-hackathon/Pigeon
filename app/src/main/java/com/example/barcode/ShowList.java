@@ -73,7 +73,7 @@ public class ShowList extends AppCompatActivity {
                 if (count==0) {
                     Intent intent1 = getIntent();
                     String id = intent1.getStringExtra("id"); //MainActivity로부터 전달받음
-                    final int[] reward = {intent1.getIntExtra("reward", 0)};
+                    int reward = intent1.getIntExtra("reward", 0);
 
                     Intent intent = new Intent(getApplicationContext(),CheckInsertAct.class);
                     intent.putExtra("id",id);

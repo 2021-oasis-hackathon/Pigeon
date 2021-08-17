@@ -29,7 +29,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     private DatabaseReference mDatabaseRef; // 실시간 데이터베이스
 
     Button scanBtn,btn_rew;
-
+    int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
-        final int[] reward = {intent.getIntExtra("reward", 0)};
+        int reward = intent.getIntExtra("reward", 0);
+        Toast.makeText(MenuActivity.this, String.format("메뉴 액티비티 : %d",reward),Toast.LENGTH_SHORT).show();
+
 
         scanBtn = findViewById(R.id.scanBtn);
         scanBtn.setOnClickListener(this);
@@ -53,6 +55,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(getApplicationContext(),Reward.class);
                 intent.putExtra("id",id); //uri라는 객체로 가져옴
                 intent.putExtra("reward",reward);
+                Toast.makeText(MenuActivity.this, String.format("메뉴에서 보낼때 아이디 : %s\n메뉴에서 보낼때 리워드 : %d",id,reward),Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });
@@ -75,7 +78,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
-        final int[] reward = {intent.getIntExtra("reward", 0)};
+        final int reward = intent.getIntExtra("reward", 0);
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
         if (result != null){
             if (result.getContents()!=null){
@@ -111,12 +114,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     public void typingbarcode(View view){
         Intent intent1 = getIntent();
         String id = intent1.getStringExtra("id"); //MainActivity로부터 전달받음
-        final int[] reward = {intent1.getIntExtra("reward", 0)};
+        final int reward = intent1.getIntExtra("reward", 0);
 
         Intent intent = new Intent(getApplicationContext(),TypingBarcodenumAct.class);
         intent.putExtra("id",id);
         intent.putExtra("reward",reward);
-        startActivity(intent); // 바코드 번호 타이핑 실행창 이동
+                startActivity(intent); // 바코드 번호 타이핑 실행창 이동
     }
 
 }

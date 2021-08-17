@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class TypingBarcodenumAct extends AppCompatActivity {
     private EditText typingbarcode;
@@ -21,8 +22,8 @@ public class TypingBarcodenumAct extends AppCompatActivity {
 
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
-        final int[] reward = {intent.getIntExtra("reward", 0)};
-
+        int reward = intent.getIntExtra("reward", 0);
+        Toast.makeText(TypingBarcodenumAct.this, String.format("타이핑 액티비티 : %d",reward),Toast.LENGTH_SHORT).show();
         confirm.setOnClickListener(new View.OnClickListener(){
 
             @Override
