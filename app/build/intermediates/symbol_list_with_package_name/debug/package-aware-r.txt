@@ -2047,7 +2047,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id backtobarcode
+id backtomenu
 id barcodenum
 id barrier
 id baseline

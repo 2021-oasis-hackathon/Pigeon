@@ -18,13 +18,13 @@ public class TypingBarcodenumAct extends AppCompatActivity {
         setContentView(R.layout.activity_typing_barcode);
         confirm = findViewById(R.id.confirm);
         typingbarcode = findViewById(R.id.typebarcode);
+        String Typingbarcode = typingbarcode.getText().toString();
+        typebarcode.typebarcodenum=Typingbarcode;
 
         confirm.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
-                String Typingbarcode = typingbarcode.getText().toString();
-                typebarcode.typebarcodenum=Typingbarcode;
                 Intent intent = new Intent(getApplicationContext(),ShowList.class);
                 startActivity(intent);
             }

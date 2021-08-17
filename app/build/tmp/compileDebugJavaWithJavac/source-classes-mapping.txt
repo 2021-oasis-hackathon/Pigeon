@@ -1,8 +1,8 @@
-com/example/barcode/InsertRecycleAct.java
- com.example.barcode.InsertRecycleAct
- com.example.barcode.InsertRecycleAct$1
-com/example/barcode/addrecycle.java
- com.example.barcode.addrecycle
+com/example/barcode/CheckInsertAct.java
+ com.example.barcode.CheckInsertAct
+com/example/barcode/ShowList.java
+ com.example.barcode.ShowList
+ com.example.barcode.ShowList$1
 com/example/barcode/CaptureAct.java
  com.example.barcode.CaptureAct
 com/example/barcode/TypingBarcodenumAct.java
@@ -30,8 +30,8 @@ com/example/barcode/BuildConfig.java
  com.example.barcode.BuildConfig
 com/example/barcode/takebarcode.java
  com.example.barcode.takebarcode
-com/example/barcode/CheckInsertAct.java
- com.example.barcode.CheckInsertAct
-com/example/barcode/ShowList.java
- com.example.barcode.ShowList
- com.example.barcode.ShowList$1
+com/example/barcode/addrecycle.java
+ com.example.barcode.addrecycle
+com/example/barcode/InsertRecycleAct.java
+ com.example.barcode.InsertRecycleAct
+ com.example.barcode.InsertRecycleAct$1

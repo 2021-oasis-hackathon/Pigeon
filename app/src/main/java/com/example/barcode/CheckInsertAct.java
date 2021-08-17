@@ -18,12 +18,12 @@ public class CheckInsertAct extends AppCompatActivity{
 
     public void insert(View view){
         Intent intent = new Intent(getApplicationContext(), InsertRecycleAct.class);
-        startActivity(intent);
+        startActivity(intent); // 정보 입력 창으로 이동
     }
 
 
     public void backtomenu(View view){
-        finish();
+        finish(); // 메인 메뉴로 돌아가기
     }
 
 }

@@ -2046,7 +2046,7 @@ int id auto 0x7f080058
 int id autoComplete 0x7f080059
 int id autoCompleteToEnd 0x7f08005a
 int id autoCompleteToStart 0x7f08005b
-int id backtobarcode 0x7f08005c
+int id backtomenu 0x7f080242
 int id barcodenum 0x7f08005d
 int id barrier 0x7f08005e
 int id baseline 0x7f08005f
