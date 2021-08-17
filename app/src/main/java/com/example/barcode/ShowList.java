@@ -3,6 +3,7 @@ package com.example.barcode;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -51,6 +52,7 @@ public class ShowList extends AppCompatActivity {
                         if (typebarcode.typebarcodenum.equals(trash1.barcodenum)) {
                             arrayList.add(trash1);
                             count = 1;
+                            typebarcode.typebarcodenum=null;
                             break;
                         }
                     }
@@ -59,6 +61,7 @@ public class ShowList extends AppCompatActivity {
                             // 담은 데이터들을 배열리스트에 넣고 리사이클러뷰로 보낼 준비
                             arrayList.add(trash1);
                             count = 1;
+                            takebarcode.scanedBarcode=null;
                             break;
                         }
                     }
@@ -89,4 +92,10 @@ public class ShowList extends AppCompatActivity {
         recyclerView.setAdapter(adapter); // 리사이클러뷰에 어댑터 연결결
     }
 
+    public void Menu(View view){
+        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+        finish();
+    }
 }

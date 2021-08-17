@@ -27,6 +27,7 @@ public class TypingBarcodenumAct extends AppCompatActivity {
                 typebarcode.typebarcodenum=Typingbarcode;
                 Intent intent = new Intent(getApplicationContext(),ShowList.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

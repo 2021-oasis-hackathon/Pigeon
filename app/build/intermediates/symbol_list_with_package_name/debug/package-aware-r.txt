@@ -1961,6 +1961,7 @@ id BOTTOM_START
 id CTRL
 id FUNCTION
 id META
+id Menu
 id NO_DEBUG
 id SHIFT
 id SHOW_ALL
@@ -2047,7 +2048,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id backtobarcode
+id backtomenu
 id barcodenum
 id barrier
 id baseline

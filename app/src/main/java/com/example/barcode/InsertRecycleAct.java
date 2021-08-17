@@ -3,6 +3,7 @@ package com.example.barcode;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -61,6 +62,9 @@ public class InsertRecycleAct extends AppCompatActivity {
                 // setValue : database에 insert (삽입)
                 mDatabaseRef.child(insertedthing.getBarcodenum()).setValue(insertedthing);
                 Toast.makeText(InsertRecycleAct.this, "분리수거 정보가 등록되었습니다.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
                 finish();
             }
         });
