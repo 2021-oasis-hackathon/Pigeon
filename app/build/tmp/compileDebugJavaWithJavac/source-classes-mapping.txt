@@ -13,14 +13,17 @@ com/example/barcode/CustomAdapter.java
  com.example.barcode.CustomAdapter$CustomViewHolder
 com/example/barcode/takebarcode.java
  com.example.barcode.takebarcode
+com/example/barcode/Reward.java
+ com.example.barcode.Reward
+ com.example.barcode.Reward$1
+com/example/barcode/TypingBarcodenumAct.java
+ com.example.barcode.TypingBarcodenumAct
+ com.example.barcode.TypingBarcodenumAct$1
 com/example/barcode/CheckInsertAct.java
  com.example.barcode.CheckInsertAct
 com/example/barcode/ShowList.java
  com.example.barcode.ShowList
  com.example.barcode.ShowList$1
-com/example/barcode/TypingBarcodenumAct.java
- com.example.barcode.TypingBarcodenumAct
- com.example.barcode.TypingBarcodenumAct$1
 com/example/barcode/MenuActivity.java
  com.example.barcode.MenuActivity
  com.example.barcode.MenuActivity$1
@@ -31,9 +34,6 @@ com/example/barcode/MainActivity.java
  com.example.barcode.MainActivity$1
  com.example.barcode.MainActivity$2
  com.example.barcode.MainActivity$3
-com/example/barcode/Reward.java
- com.example.barcode.Reward
- com.example.barcode.Reward$1
 com/example/barcode/InsertRecycleAct.java
  com.example.barcode.InsertRecycleAct
  com.example.barcode.InsertRecycleAct$1
