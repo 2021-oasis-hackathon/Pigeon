@@ -64,6 +64,14 @@
         "source": "C:\\Users\\st042\\Pigeon\\app\\src\\main\\res\\layout\\list_item.xml"
     },
     {
+        "merged": "C:\\Users\\st042\\Pigeon\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_insert.xml.flat",
+        "source": "C:\\Users\\st042\\Pigeon\\app\\src\\main\\res\\layout\\activity_insert.xml"
+    },
+    {
+        "merged": "C:\\Users\\st042\\Pigeon\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_checkinsert.xml.flat",
+        "source": "C:\\Users\\st042\\Pigeon\\app\\src\\main\\res\\layout\\activity_checkinsert.xml"
+    },
+    {
         "merged": "C:\\Users\\st042\\Pigeon\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\st042\\Pigeon\\app\\src\\main\\res\\drawable\\ic_launcher_foreground.xml"
     },

@@ -2047,6 +2047,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backtobarcode
 id barcodenum
 id barrier
 id baseline
@@ -2066,6 +2067,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_google
 id btn_holder
+id btn_regibunri
 id btn_rew
 id buttonPanel
 id button_continue
@@ -2167,6 +2169,9 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id et_howbunri
+id et_pdId
+id et_pdmat
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2216,6 +2221,7 @@ id image
 id immediateStop
 id included
 id info
+id insert
 id invisible
 id invisible_frame
 id inward
@@ -2449,6 +2455,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2590,6 +2599,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_checkinsert
+layout activity_insert
 layout activity_main
 layout activity_menu
 layout browser_actions_context_menu_page

@@ -94,9 +94,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         if (result != null){
             if (result.getContents()!=null){
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                String barC=result.getContents();
-                TakeBarcode.scanedBarcode=barC;
-                builder.setMessage(barC);
+                TakeBarcode.scanedBarcode=result.getContents();
+                builder.setMessage(result.getContents());
                 builder.setTitle("스캔 결과");
                 builder.setPositiveButton("다시 스캔", new DialogInterface.OnClickListener() {
                     @Override

@@ -62,6 +62,10 @@
         </activity>
         <activity android:name="com.example.barcode.ShowList" >
         </activity>
+        <activity android:name="com.example.barcode.CheckInsertAct" >
+        </activity>
+        <activity android:name="com.example.barcode.InsertRecycleAct" >
+        </activity>
 
         <meta-data
             android:name="com.google.android.gms.version"

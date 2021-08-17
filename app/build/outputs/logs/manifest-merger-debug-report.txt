@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-46:12
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\st042\.gradle\caches\transforms-3\d693b91d21b36f832bf546d1989be537\transformed\jetified-firebase-ui-auth-7.2.0\AndroidManifest.xml:2:1-109:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\st042\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\st042\.gradle\caches\transforms-3\fb168b44b05705a805528f1c42f7e2f6\transformed\constraintlayout-2.1.0\AndroidManifest.xml:2:1-11:12
@@ -81,20 +81,20 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\st042\.gradle\ca
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\st042\.gradle\caches\transforms-3\607ff11b516ddc96487249f810d47dc2\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\st042\.gradle\caches\transforms-3\e0704842989cea6c82cf2a91963d9437\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\st042\.gradle\caches\transforms-3\bcde78bc88dd626eb99fc345b357b7d4\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:2:11-69
@@ -117,7 +117,7 @@ MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] C:\Users\st042\.gradl
 	android:name
 		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:8:19-67
 application
-ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:10:5-40:19
+ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:10:5-44:19
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\st042\.gradle\caches\transforms-3\d693b91d21b36f832bf546d1989be537\transformed\jetified-firebase-ui-auth-7.2.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\st042\.gradle\caches\transforms-3\d693b91d21b36f832bf546d1989be537\transformed\jetified-firebase-ui-auth-7.2.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\st042\.gradle\caches\transforms-3\a4db12b072650e13bc36a4fc9443bd47\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
@@ -230,6 +230,14 @@ activity#com.example.barcode.ShowList
 ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:38:9-39:20
 	android:name
 		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:38:19-43
+activity#com.example.barcode.CheckInsertAct
+ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:40:9-41:20
+	android:name
+		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:40:19-49
+activity#com.example.barcode.InsertRecycleAct
+ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:42:9-43:20
+	android:name
+		ADDED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:42:19-51
 uses-sdk
 INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml

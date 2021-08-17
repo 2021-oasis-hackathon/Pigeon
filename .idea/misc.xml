@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
+        <entry key="..\:/android-sdk/Barcode/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14583333333333334" />
+        <entry key="..\:/android-sdk/Barcode/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.14583333333333334" />
+        <entry key="..\:/android-sdk/Barcode/app/src/main/res/layout/Water.xml" value="0.25364583333333335" />
+        <entry key="..\:/android-sdk/Barcode/app/src/main/res/layout/activity_checkinsert.xml" value="0.264" />
+        <entry key="..\:/android-sdk/Barcode/app/src/main/res/layout/activity_data_ouput.xml" value="0.1296875" />
+        <entry key="..\:/android-sdk/Barcode/app/src/main/res/layout/activity_inser.xml" value="0.1015625" />
+        <entry key="..\:/android-sdk/Barcode/app/src/main/res/layout/activity_insert.xml" value="0.264" />
+=======
         <entry key="..\:/Users/st042/Pigeon/app/src/main/res/layout/activity_data_ouput.xml" value="0.33" />
         <entry key="..\:/Users/st042/Pigeon/app/src/main/res/layout/activity_google_login.xml" value="0.2046875" />
         <entry key="..\:/Users/st042/Pigeon/app/src/main/res/layout/activity_login_result.xml" value="0.1526268115942029" />
@@ -10,6 +19,7 @@
         <entry key="..\:/Users/st042/Pigeon/app/src/main/res/layout/activity_menu.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/st042/Pigeon/app/src/main/res/layout/list_item.xml" value="0.14513677811550152" />
         <entry key="..\:/Users/st042/Pigeon/app/src/main/res/layout/list_show.xml" value="0.1778115501519757" />
+>>>>>>> 9b3ef89308f5cbdb0434d5c42f882e69b489c740
         <entry key="..\:/android-sdk/Barcode/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
       </map>
     </option>
