@@ -24,7 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 
 
 public class InsertRecycleAct extends AppCompatActivity {
-    private DatabaseReference mDatabaseRef; //실시간 데이터베이스
+    private DatabaseReference mDatabaseRef,reward_DatabaseRef; //실시간 데이터베이스
     private EditText name, material, recycle; // 분리수거 이름, 재질, 방식 입력 필드
     private Button mBtnregihowbunri;    // 분리수거 등록 버튼
 
@@ -38,6 +38,7 @@ public class InsertRecycleAct extends AppCompatActivity {
         final int[] reward = {intent.getIntExtra("reward", 0)};
 
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("trash");
+        reward_DatabaseRef = FirebaseDatabase.getInstance().getReference("User");
 
         name = findViewById(R.id.et_pdId); //제품명
         material = findViewById(R.id.et_pdmat); //재질
@@ -48,7 +49,7 @@ public class InsertRecycleAct extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 reward[0] +=100;
-                mDatabaseRef.child(id).setValue(reward[0]);
+                reward_DatabaseRef.child(id).setValue(reward[0]);
 
                 //등록하기 버튼 클릭 후 액션
                 //text박스에 적힌 값을 문자열로 변환 후 변수에 할당

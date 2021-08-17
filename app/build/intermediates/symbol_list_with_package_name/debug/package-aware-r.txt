@@ -2491,8 +2491,7 @@ id transition_transform
 id triangle
 id trouble_signing_in
 id trouble_signing_in_possible_fixes
-id tv_result
-id tv_reward
+id tv_reward_pres
 id typebarcode
 id unchecked
 id uniform
@@ -2607,6 +2606,7 @@ layout activity_checkinsert
 layout activity_insert
 layout activity_main
 layout activity_menu
+layout activity_reward
 layout activity_typing_barcode
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

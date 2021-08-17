@@ -9,15 +9,25 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class CheckInsertAct extends AppCompatActivity{
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkinsert);
 
+
+
     }
 
     public void insert(View view){
+        Intent intent1 = getIntent();
+        String id = intent1.getStringExtra("id");
+        final int[] reward = {intent1.getIntExtra("reward", 0)};
+
         Intent intent = new Intent(getApplicationContext(), InsertRecycleAct.class);
+        intent.putExtra("id",id);
+        intent.putExtra("reward",reward);
         intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
         finish();
