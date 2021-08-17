@@ -30,6 +30,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
     Button scanBtn,btn_rew;
     int count=0;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
