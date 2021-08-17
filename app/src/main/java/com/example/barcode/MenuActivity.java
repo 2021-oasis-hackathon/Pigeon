@@ -54,15 +54,11 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 mDatabaseRef.child(id).setValue(reward[0]);
             }
         });
-
-
+        
         tv_result = findViewById(R.id.tv_result);
         tv_result.setText(id); //id를 텍스트 뷰에 저장
-
         tv_reward = findViewById(R.id.tv_reward);
-        //tv_reward =
 
-    //    int a = (int) mDatabaseRef.child(id).get().getResult().getValue();
         mDatabaseRef.child(id).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
@@ -122,7 +118,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
     public void typingbarcode(View view){
         Intent intent = new Intent(getApplicationContext(),TypingBarcodenumAct.class);
-        startActivity(intent);
+        startActivity(intent); // 바코드 번호 타이핑 실행창 이동
     }
 
 }

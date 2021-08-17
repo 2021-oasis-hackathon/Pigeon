@@ -19,6 +19,7 @@ public class TypingBarcodenumAct extends AppCompatActivity {
         confirm = findViewById(R.id.confirm);
         typingbarcode = findViewById(R.id.typebarcode);
 
+
         confirm.setOnClickListener(new View.OnClickListener(){
 
             @Override

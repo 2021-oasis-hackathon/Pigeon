@@ -25,6 +25,7 @@ public class CheckInsertAct extends AppCompatActivity{
 
 
     public void backtomenu(View view){
+
         Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
