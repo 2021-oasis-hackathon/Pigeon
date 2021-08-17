@@ -54,10 +54,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         });
-        
-        tv_result = findViewById(R.id.tv_result);
-        tv_result.setText(id); //id를 텍스트 뷰에 저장
-        tv_reward = findViewById(R.id.tv_reward);
 
         mDatabaseRef.child(id).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override

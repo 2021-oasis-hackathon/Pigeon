@@ -32,7 +32,7 @@ public class Reward extends AppCompatActivity {
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
         final int[] reward = {intent.getIntExtra("reward", 0)};
 
-        tv_reward_pres = findViewById(R.id.tv_reward_pres)
+        tv_reward_pres = findViewById(R.id.tv_reward_pres);
 
         mDatabaseRef.child(id).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
