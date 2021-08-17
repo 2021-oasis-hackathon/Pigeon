@@ -29,7 +29,7 @@ public class Reward extends AppCompatActivity {
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("User");
 
         Intent intent = getIntent();
-        String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
+        String id = intent.getStringExtra("id");
         int reward = intent.getIntExtra("reward", 0);
 
 

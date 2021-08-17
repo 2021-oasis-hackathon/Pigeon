@@ -41,8 +41,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
         int reward = intent.getIntExtra("reward", 0);
-        Toast.makeText(MenuActivity.this, String.format("메뉴 액티비티 : %d",reward),Toast.LENGTH_SHORT).show();
-
 
         scanBtn = findViewById(R.id.scanBtn);
         scanBtn.setOnClickListener(this);
@@ -55,7 +53,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(getApplicationContext(),Reward.class);
                 intent.putExtra("id",id); //uri라는 객체로 가져옴
                 intent.putExtra("reward",reward);
-                Toast.makeText(MenuActivity.this, String.format("메뉴에서 보낼때 아이디 : %d\n메뉴에서 보낼때 리워드 : %d",id,reward),Toast.LENGTH_SHORT).show();
 
                 startActivity(intent);
             }

@@ -23,7 +23,6 @@ public class TypingBarcodenumAct extends AppCompatActivity {
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
         int reward = intent.getIntExtra("reward", 0);
-        Toast.makeText(TypingBarcodenumAct.this, String.format("타이핑 액티비티 : %d",reward),Toast.LENGTH_SHORT).show();
         confirm.setOnClickListener(new View.OnClickListener(){
 
             @Override

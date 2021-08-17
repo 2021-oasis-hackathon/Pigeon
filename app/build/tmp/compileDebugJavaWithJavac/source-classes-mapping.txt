@@ -16,14 +16,14 @@ com/example/barcode/takebarcode.java
 com/example/barcode/Reward.java
  com.example.barcode.Reward
  com.example.barcode.Reward$1
-com/example/barcode/TypingBarcodenumAct.java
- com.example.barcode.TypingBarcodenumAct
- com.example.barcode.TypingBarcodenumAct$1
 com/example/barcode/CheckInsertAct.java
  com.example.barcode.CheckInsertAct
 com/example/barcode/ShowList.java
  com.example.barcode.ShowList
  com.example.barcode.ShowList$1
+com/example/barcode/TypingBarcodenumAct.java
+ com.example.barcode.TypingBarcodenumAct
+ com.example.barcode.TypingBarcodenumAct$1
 com/example/barcode/MenuActivity.java
  com.example.barcode.MenuActivity
  com.example.barcode.MenuActivity$1
