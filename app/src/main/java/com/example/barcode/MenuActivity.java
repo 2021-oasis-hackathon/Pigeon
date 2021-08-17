@@ -50,8 +50,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public void onClick(View view) { //리워드 축적하는 코드
-                reward[0] +=100;
-                mDatabaseRef.child(id).setValue(reward[0]);
+                Intent intent = new Intent(getApplicationContext(),Reward.class);
+                startActivity(intent);
             }
         });
         

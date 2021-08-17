@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Barcode">
         <activity
+            android:name=".Reward"
+            android:exported="true" />
+        <activity
             android:name=".TypingBarcodenumAct"
             android:exported="true" />
         <activity
@@ -31,12 +34,11 @@
             android:name=".CaptureAct"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
-        <activity android:name=".MenuActivity"></activity>
-        <activity android:name=".ShowList"></activity>
-        <activity android:name=".CheckInsertAct"></activity>
-        <activity android:name=".InsertRecycleAct"></activity>
-
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".ShowList" />
+        <activity android:name=".CheckInsertAct" />
+        <activity android:name=".InsertRecycleAct" />
     </application>
 
 </manifest>

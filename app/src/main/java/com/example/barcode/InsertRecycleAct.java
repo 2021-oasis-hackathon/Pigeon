@@ -33,6 +33,10 @@ public class InsertRecycleAct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert);
 
+        Intent intent = getIntent();
+        String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
+        final int[] reward = {intent.getIntExtra("reward", 0)};
+
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("trash");
 
         name = findViewById(R.id.et_pdId); //제품명
@@ -43,6 +47,9 @@ public class InsertRecycleAct extends AppCompatActivity {
         mBtnregihowbunri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                reward[0] +=100;
+                mDatabaseRef.child(id).setValue(reward[0]);
+
                 //등록하기 버튼 클릭 후 액션
                 //text박스에 적힌 값을 문자열로 변환 후 변수에 할당
                 String Name = name.getText().toString();
