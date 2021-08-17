@@ -22,9 +22,8 @@ public class CheckInsertAct extends AppCompatActivity{
     }
 
 
-    public void backtoscan(View view){
-        Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-        startActivity(intent);
+    public void backtomenu(View view){
+        finish();
     }
 
 }

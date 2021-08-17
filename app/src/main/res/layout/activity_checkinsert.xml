@@ -25,15 +25,15 @@
         android:text="분리수거 정보 입력하기" />
 
     <Button
-        android:id="@+id/backtobarcode"
+        android:id="@+id/backtomenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
         android:layout_marginTop="300dp"
         android:layout_toRightOf="@+id/insert"
         android:layout_weight="1"
-        android:onClick="backtoscan"
-        android:text="바코드 다시 스캔하기" />
+        android:onClick="backtomenu"
+        android:text="메뉴로 돌아가기" />
 
 
 </RelativeLayout>

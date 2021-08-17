@@ -47,18 +47,26 @@ public class ShowList extends AppCompatActivity {
                 int count=0;
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) { //반복문으로 데이터리스트 추출
                     trash trash1 = snapshot.getValue(trash.class); //db로부터 가져온 애를 trash에 쏨
-                    if(takebarcode.scanedBarcode.equals(trash1.barcodenum)||typebarcode.typebarcodenum.equals(trash1.barcodenum)) {
-                         // 담은 데이터들을 배열리스트에 넣고 리사이클러뷰로 보낼 준비
-                        arrayList.add(trash1);
-                        count=1;
-                        break;
+                    if(takebarcode.scanedBarcode==null) {
+                        if (typebarcode.typebarcodenum.equals(trash1.barcodenum)) {
+                            arrayList.add(trash1);
+                            count = 1;
+                            break;
+                        }
                     }
-
+                    else {
+                        if (takebarcode.scanedBarcode.equals(trash1.barcodenum)) {
+                            // 담은 데이터들을 배열리스트에 넣고 리사이클러뷰로 보낼 준비
+                            arrayList.add(trash1);
+                            count = 1;
+                            break;
+                        }
+                    }
                 }
 
                 if (count==0) {
                     Intent intent = new Intent(getApplicationContext(),CheckInsertAct.class);
-                    startActivity(intent);
+                    startActivity(intent); // 바코드 정보 없으면 입력창으로 넘어감
                 }
                 // 새창띄우고 정보입력 코드
                 /**
