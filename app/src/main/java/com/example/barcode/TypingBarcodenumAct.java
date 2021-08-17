@@ -19,6 +19,9 @@ public class TypingBarcodenumAct extends AppCompatActivity {
         confirm = findViewById(R.id.confirm);
         typingbarcode = findViewById(R.id.typebarcode);
 
+        Intent intent = getIntent();
+        String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
+        final int[] reward = {intent.getIntExtra("reward", 0)};
 
         confirm.setOnClickListener(new View.OnClickListener(){
 
@@ -27,6 +30,8 @@ public class TypingBarcodenumAct extends AppCompatActivity {
                 String Typingbarcode = typingbarcode.getText().toString();
                 typebarcode.typebarcodenum=Typingbarcode;
                 Intent intent = new Intent(getApplicationContext(),ShowList.class);
+                intent.putExtra("id",id);
+                intent.putExtra("reward",reward);
                 startActivity(intent);
                 finish();
             }

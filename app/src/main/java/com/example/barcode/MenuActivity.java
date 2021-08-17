@@ -24,7 +24,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class MenuActivity extends AppCompatActivity implements View.OnClickListener{
-    private TextView tv_result,tv_reward;
+    private TextView tv_result;
     private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
     private DatabaseReference mDatabaseRef; // 실시간 데이터베이스
 
@@ -51,6 +51,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) { //리워드 축적하는 코드
                 Intent intent = new Intent(getApplicationContext(),Reward.class);
+                intent.putExtra("id",id); //uri라는 객체로 가져옴
+                intent.putExtra("reward",reward);
                 startActivity(intent);
             }
         });
@@ -71,6 +73,9 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        Intent intent = getIntent();
+        String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
+        final int[] reward = {intent.getIntExtra("reward", 0)};
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
         if (result != null){
             if (result.getContents()!=null){
@@ -87,6 +92,8 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(getApplicationContext(), ShowList.class);
+                        intent.putExtra("id",id);
+                        intent.putExtra("reward",reward);
                         startActivity(intent);
                     }
                 });
@@ -102,7 +109,13 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void typingbarcode(View view){
+        Intent intent1 = getIntent();
+        String id = intent1.getStringExtra("id"); //MainActivity로부터 전달받음
+        final int[] reward = {intent1.getIntExtra("reward", 0)};
+
         Intent intent = new Intent(getApplicationContext(),TypingBarcodenumAct.class);
+        intent.putExtra("id",id);
+        intent.putExtra("reward",reward);
         startActivity(intent); // 바코드 번호 타이핑 실행창 이동
     }
 

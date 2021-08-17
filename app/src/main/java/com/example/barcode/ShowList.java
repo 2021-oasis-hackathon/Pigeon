@@ -27,6 +27,9 @@ public class ShowList extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference databaseReference;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,16 +71,16 @@ public class ShowList extends AppCompatActivity {
                 }
 
                 if (count==0) {
+                    Intent intent1 = getIntent();
+                    String id = intent1.getStringExtra("id"); //MainActivity로부터 전달받음
+                    final int[] reward = {intent1.getIntExtra("reward", 0)};
+
                     Intent intent = new Intent(getApplicationContext(),CheckInsertAct.class);
+                    intent.putExtra("id",id);
+                    intent.putExtra("reward",reward);
                     startActivity(intent); // 바코드 정보 없으면 입력창으로 넘어감
                 }
                 // 새창띄우고 정보입력 코드
-                /**
-                et_test = findViewById(R.id.et_test)
-                레이아웃에서 설정해놓은 텍스트 박스 id 불러오고
-                str = et_test.getText().toString();
-                getText한 값을 문자열로 저장
-                **/
                 adapter.notifyDataSetChanged();//리스트 저장 및 새로고침
             }
 
