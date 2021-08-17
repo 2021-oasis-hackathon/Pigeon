@@ -1,65 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="688dp"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/itemimage"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="30dp"
-            android:src="@drawable/ic_launcher_background"/>
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_launcher_background" />
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginTop="40dp"
             android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/Barcodenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="바코드 번호 :"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="23dp"
+                tools:layout_editor_absoluteY="0dp" />
 
             <TextView
                 android:id="@+id/barcodenum"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="바코드 번호"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:text="바코드 번호 위치"
+                app:layout_constraintStart_toEndOf="@+id/Barcodenum"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="28dp"
+                android:text="물품명 :"
+                app:layout_constraintTop_toBottomOf="@+id/Barcodenum"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="56dp" />
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="물품명"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:text="물품명 위치"
+                app:layout_constraintStart_toEndOf="@+id/Name"
+                app:layout_constraintTop_toBottomOf="@+id/barcodenum"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/Material"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="재질 :"
+                app:layout_constraintTop_toBottomOf="@+id/Name"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="65dp" />
 
             <TextView
                 android:id="@+id/material"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="재질"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:text="재질 위치"
+                app:layout_constraintStart_toEndOf="@+id/Material"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/Recycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="이렇게 버리세요! :"
+                app:layout_constraintTop_toBottomOf="@+id/Material"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="26dp" />
 
             <TextView
                 android:id="@+id/recycle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="분리수거법"
-                android:layout_margin="5dp"/>
-        </LinearLayout>
+                android:layout_margin="5dp"
+                android:text="분리수거법 위치"
+                app:layout_constraintStart_toEndOf="@+id/Recycle"
+                app:layout_constraintTop_toBottomOf="@+id/material"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/Menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="Menu"
+            android:text="메뉴로 돌아가기"
+            tools:ignore="MissingConstraints">
+
+        </Button>
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/Menu"
-        android:layout_height="wrap_content"
-        android:onClick="Menu"
-        android:text="Button"
-        android:layout_width="match_parent">
-
-    </Button>
 
 </LinearLayout>

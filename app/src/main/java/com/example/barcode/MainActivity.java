@@ -118,7 +118,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void onComplete(@NonNull Task<AuthResult> task) { //로그인이 실제로 성공했는가
                         if(task.isSuccessful()){  //로그인 성공
                             Toast.makeText(MainActivity.this,"로그인 성공",Toast.LENGTH_SHORT).show();
-                            Toast.makeText(MainActivity.this, String.format("메인 : %d",rew),Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(),MenuActivity.class);
                             intent.putExtra("id",account.getId()); //uri라는 객체로 가져옴
                             intent.putExtra("reward",rew);

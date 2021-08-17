@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,7 +30,7 @@ public class Reward extends AppCompatActivity {
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("User");
 
         Intent intent = getIntent();
-        String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
+        String id = intent.getStringExtra("id");
         int reward = intent.getIntExtra("reward", 0);
 
 
@@ -45,5 +46,12 @@ public class Reward extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void returntoMenu (View view){
+        Intent intent1 = new Intent(getApplicationContext(),MenuActivity.class);
+        intent1.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent1);
+        finish();
     }
 }

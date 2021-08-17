@@ -1958,11 +1958,15 @@ drawable water
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id Barcodenum
 id CTRL
 id FUNCTION
 id META
+id Material
 id Menu
 id NO_DEBUG
+id Name
+id Recycle
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2071,6 +2075,7 @@ id btn_holder
 id btn_regibunri
 id btn_rew
 id btn_typing
+id button2
 id buttonPanel
 id button_continue
 id button_create

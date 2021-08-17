@@ -36,7 +36,6 @@ public class InsertRecycleAct extends AppCompatActivity {
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
         final int[] reward = {intent.getIntExtra("reward", 0)};
-        Toast.makeText(InsertRecycleAct.this, String.format("%d",reward[0]),Toast.LENGTH_SHORT).show();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("trash");
         reward_DatabaseRef = FirebaseDatabase.getInstance().getReference("User");
 
@@ -50,7 +49,7 @@ public class InsertRecycleAct extends AppCompatActivity {
             public void onClick(View view) {
                 reward[0] +=100;
                 reward_DatabaseRef.child(id).setValue(reward[0]);
-                Toast.makeText(InsertRecycleAct.this, String.format("%d",reward[0]),Toast.LENGTH_SHORT).show();
+
 
                 //등록하기 버튼 클릭 후 액션
                 //text박스에 적힌 값을 문자열로 변환 후 변수에 할당
@@ -70,10 +69,10 @@ public class InsertRecycleAct extends AppCompatActivity {
                 addrecycle.setRecycle(Recycle);
                 // setValue : database에 insert (삽입)
                 mDatabaseRef.child(insertedthing.getBarcodenum()).setValue(insertedthing);
-                Toast.makeText(InsertRecycleAct.this, "분리수거 정보가 등록되었습니다.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
                 intent.putExtra("id",id);
-                intent.putExtra("reward",reward);
+                intent.putExtra("reward",reward[0]);
+                Toast.makeText(getApplicationContext(), "추가되었습니다.", Toast.LENGTH_SHORT).show();
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
                 finish();

@@ -6,6 +6,7 @@ com/example/barcode/MenuActivity.java
  com.example.barcode.MenuActivity
  com.example.barcode.MenuActivity$1
  com.example.barcode.MenuActivity$2
+ com.example.barcode.MenuActivity$3
 com/example/barcode/MainActivity.java
  com.example.barcode.MainActivity
  com.example.barcode.MainActivity$1
