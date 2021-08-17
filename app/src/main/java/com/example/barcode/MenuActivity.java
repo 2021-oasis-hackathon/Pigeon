@@ -54,17 +54,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         });
-
-        mDatabaseRef.child(id).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
-                if (task.isSuccessful()) {
-                    tv_reward.setText(String.valueOf(task.getResult().getValue()));
-                }
-                else {
-                }
-            }
-        });
     }
 
     private void scanCode(){

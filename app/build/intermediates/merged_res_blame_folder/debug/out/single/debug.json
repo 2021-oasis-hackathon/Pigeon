@@ -36,6 +36,10 @@
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_insert.xml"
     },
     {
+        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_reward.xml.flat",
+        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_reward.xml"
+    },
+    {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_list_item.xml.flat",
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\list_item.xml"
     },

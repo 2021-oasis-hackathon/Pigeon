@@ -2490,8 +2490,7 @@ int id transition_transform 0x7f080214
 int id triangle 0x7f080215
 int id trouble_signing_in 0x7f080216
 int id trouble_signing_in_possible_fixes 0x7f080217
-int id tv_result 0x7f080218
-int id tv_reward 0x7f080219
+int id tv_reward_pres 0x7f080243
 int id typebarcode 0x7f08021a
 int id unchecked 0x7f08021b
 int id uniform 0x7f08021c
@@ -2606,6 +2605,7 @@ int layout activity_checkinsert 0x7f0b001c
 int layout activity_insert 0x7f0b001d
 int layout activity_main 0x7f0b001e
 int layout activity_menu 0x7f0b001f
+int layout activity_reward 0x7f0b009e
 int layout activity_typing_barcode 0x7f0b0020
 int layout browser_actions_context_menu_page 0x7f0b0021
 int layout browser_actions_context_menu_row 0x7f0b0022
