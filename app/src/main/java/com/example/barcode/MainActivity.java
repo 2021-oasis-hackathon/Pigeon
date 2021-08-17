@@ -43,11 +43,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth auth;
     private GoogleApiClient googleApiClient;
     private static final int REQ_SIGN_GOOGLE = 100;
+    private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
+    private DatabaseReference mDatabaseRef; // 실시간 데이터베이스
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference("User");
 
         GoogleSignInOptions googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -81,12 +86,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             if(result.isSuccess()){ //인증 성공
                 GoogleSignInAccount account = result.getSignInAccount(); //구글 로그인 정보 담음
-                resultLogin(account);//로그인 결과 출력
+                final int[] rew = {0};
+                mDatabaseRef.child(account.getId()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DataSnapshot> task) {
+                        if (task.isSuccessful()) {
+                            if(String.valueOf(task.getResult().getValue())=="null") {
+                                mDatabaseRef.child(account.getId()).setValue(0);
+                            }
+                            else{
+                                rew[0] = Integer.parseInt(String.valueOf(task.getResult().getValue()));
+                            }
+                        }
+                        else {
+                        }
+                        resultLogin(account, rew[0]);//로그인 결과 출력
+                    }
+                });
+
             }
         }
     }
 
-    private void resultLogin(GoogleSignInAccount account) {
+    private void resultLogin(GoogleSignInAccount account,int rew) {
         AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(),null); // 인증로직
         auth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -96,6 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(MainActivity.this,"로그인 성공",Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getApplicationContext(),MenuActivity.class);
                             intent.putExtra("id",account.getId()); //uri라는 객체로 가져옴
+                            intent.putExtra("reward",rew);
                             startActivity(intent);
                         } else {
                             Toast.makeText(MainActivity.this,"로그인 실패",Toast.LENGTH_SHORT).show();
