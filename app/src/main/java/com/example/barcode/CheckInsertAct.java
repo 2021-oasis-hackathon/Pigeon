@@ -23,7 +23,7 @@ public class CheckInsertAct extends AppCompatActivity{
     public void insert(View view){
         Intent intent1 = getIntent();
         String id = intent1.getStringExtra("id");
-        final int[] reward = {intent1.getIntExtra("reward", 0)};
+        int reward = intent1.getIntExtra("reward", 0);
 
         Intent intent = new Intent(getApplicationContext(), InsertRecycleAct.class);
         intent.putExtra("id",id);

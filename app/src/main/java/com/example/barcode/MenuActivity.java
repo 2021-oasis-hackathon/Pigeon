@@ -40,7 +40,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
-        final int[] reward = {intent.getIntExtra("reward", 0)};
+        int reward = intent.getIntExtra("reward", 0);
 
         scanBtn = findViewById(R.id.scanBtn);
         scanBtn.setOnClickListener(this);

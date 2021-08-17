@@ -21,7 +21,7 @@ public class TypingBarcodenumAct extends AppCompatActivity {
 
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
-        final int[] reward = {intent.getIntExtra("reward", 0)};
+        int reward = intent.getIntExtra("reward", 0);
 
         confirm.setOnClickListener(new View.OnClickListener(){
 

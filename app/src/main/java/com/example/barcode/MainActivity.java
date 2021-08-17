@@ -87,13 +87,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             if(result.isSuccess()){ //인증 성공
                 GoogleSignInAccount account = result.getSignInAccount(); //구글 로그인 정보 담음
-                final int[] rew = {0};
+                int[] rew = {0};
                 mDatabaseRef.child(account.getId()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<DataSnapshot> task) {
                         if (task.isSuccessful()) {
                             if(String.valueOf(task.getResult().getValue())=="null") {
                                 mDatabaseRef.child(account.getId()).setValue(0);
+                                rew[0]=0;
                             }
                             else{
                                 rew[0] = Integer.parseInt(String.valueOf(task.getResult().getValue()));
