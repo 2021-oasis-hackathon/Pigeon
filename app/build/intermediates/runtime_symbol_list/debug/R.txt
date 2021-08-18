@@ -2067,6 +2067,7 @@ int id browser_actions_menu_items 0x7f08006d
 int id browser_actions_menu_view 0x7f08006e
 int id btn_google 0x7f08006f
 int id btn_holder 0x7f080070
+int id btn_refresh 0x7f080242
 int id btn_regibunri 0x7f080071
 int id btn_rew 0x7f080072
 int id btn_typing 0x7f080073

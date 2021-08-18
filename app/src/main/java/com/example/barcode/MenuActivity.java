@@ -28,12 +28,13 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth mFirebaseAuth; //파이어베이스 인증
     private DatabaseReference mDatabaseRef; // 실시간 데이터베이스
 
-    Button scanBtn,btn_rew;
+    Button scanBtn,btn_rew,btn_refresh;
     int count=0;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
@@ -79,7 +80,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
-        final int reward = intent.getIntExtra("reward", 0);
+        int reward = intent.getIntExtra("reward", 0);
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode,resultCode,data);
         if (result != null){
             if (result.getContents()!=null){
@@ -113,14 +114,27 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void typingbarcode(View view){
-        Intent intent1 = getIntent();
-        String id = intent1.getStringExtra("id"); //MainActivity로부터 전달받음
-        final int reward = intent1.getIntExtra("reward", 0);
 
-        Intent intent = new Intent(getApplicationContext(),TypingBarcodenumAct.class);
-        intent.putExtra("id",id);
-        intent.putExtra("reward",reward);
-                startActivity(intent); // 바코드 번호 타이핑 실행창 이동
+        Intent intent = getIntent();
+        String id = intent.getStringExtra("id");
+
+        Intent intent1 = new Intent(getApplicationContext(),TypingBarcodenumAct.class);
+        intent1.putExtra("id",id);
+        mDatabaseRef.child(id).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if (task.isSuccessful()) {
+                    intent1.putExtra("reward",Integer.parseInt(String.valueOf(task.getResult().getValue())));
+
+                }
+                else {
+                }
+                startActivity(intent1);// 바코드 번호 타이핑 실행창 이동
+            }
+        });
+
+
     }
+
 
 }

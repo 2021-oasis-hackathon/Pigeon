@@ -2068,6 +2068,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_google
 id btn_holder
+id btn_refresh
 id btn_regibunri
 id btn_rew
 id btn_typing
