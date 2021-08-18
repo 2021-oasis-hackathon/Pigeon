@@ -45,6 +45,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Barcode" >
         <activity
+            android:name="com.example.barcode.InsertCompleteAct"
+            android:exported="true" />
+        <activity
             android:name="com.example.barcode.Reward"
             android:exported="true" />
         <activity

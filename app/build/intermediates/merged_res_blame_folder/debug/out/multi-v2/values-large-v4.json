@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\AndroidStudioProjects\\Pigeon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\mingyulee\\.gradle\\caches\\transforms-3\\a4db12b072650e13bc36a4fc9443bd47\\transformed\\material-1.4.0\\res\\values-large-v4\\values-large-v4.xml",
+=======
+            "outputFile": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\김민주\\.gradle\\caches\\transforms-3\\a4db12b072650e13bc36a4fc9443bd47\\transformed\\material-1.4.0\\res\\values-large-v4\\values-large-v4.xml",
+>>>>>>> fb80bbaf4f29018e2ddfb9ac9f619d5cc3f3afa6
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,7 +28,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\mingyulee\\.gradle\\caches\\transforms-3\\2fb21fbcddcb4a1a19c9cd01cfb49ddb\\transformed\\appcompat-1.3.1\\res\\values-large-v4\\values-large-v4.xml",
+=======
+                    "source": "C:\\Users\\김민주\\.gradle\\caches\\transforms-3\\2fb21fbcddcb4a1a19c9cd01cfb49ddb\\transformed\\appcompat-1.3.1\\res\\values-large-v4\\values-large-v4.xml",
+>>>>>>> fb80bbaf4f29018e2ddfb9ac9f619d5cc3f3afa6
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
