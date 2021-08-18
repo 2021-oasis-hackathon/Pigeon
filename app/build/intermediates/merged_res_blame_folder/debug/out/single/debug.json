@@ -76,6 +76,10 @@
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_checkinsert.xml"
     },
     {
+        "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\xml_filepaths.xml.flat",
+        "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\xml\\filepaths.xml"
+    },
+    {
         "merged": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_insert_complete.xml.flat",
         "source": "C:\\android-sdk\\Barcode\\app\\src\\main\\res\\layout\\activity_insert_complete.xml"
     },

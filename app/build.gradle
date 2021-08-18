@@ -33,7 +33,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
     implementation 'com.github.bumptech.glide:glide:4.10.0'
-    implementation 'com.google.firebase:firebase-database:20.0.1'//이미지 로딩 원활
+    implementation 'com.google.firebase:firebase-database:20.0.1'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'//이미지 로딩 원활
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
@@ -41,6 +42,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:17.2.1' //파이어베이스 코어
     implementation 'com.google.firebase:firebase-auth' //파이어베이스 인증
     implementation 'com.firebaseui:firebase-ui-auth:7.2.0' //파이어베이스 인증2
+    implementation 'gun0912.ted:tedpermission:2.0.0' // 마시멜로우 권한
     implementation platform('com.google.firebase:firebase-bom:28.2.1')
     implementation 'com.google.android.gms:play-services-auth:19.2.0'
     testImplementation 'junit:junit:4+'

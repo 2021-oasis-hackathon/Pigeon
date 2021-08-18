@@ -2032,6 +2032,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addphoto
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2227,6 +2228,7 @@ id ignore
 id ignoreRequest
 id image
 id imageButton
+id img1
 id immediateStop
 id included
 id info
@@ -2975,6 +2977,9 @@ string path_password_strike_through
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+string tedpermission_close
+string tedpermission_confirm
+string tedpermission_setting
 string zxing_app_name
 string zxing_button_ok
 string zxing_msg_camera_framework_bug
@@ -3500,6 +3505,7 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_Transparent_Permission
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -3915,6 +3921,7 @@ styleable include constraintSet
 styleable zxing_camera_preview zxing_framing_rect_height zxing_framing_rect_width zxing_preview_scaling_strategy zxing_use_texture_view
 styleable zxing_finder zxing_possible_result_points zxing_result_view zxing_viewfinder_laser zxing_viewfinder_mask
 styleable zxing_view zxing_scanner_layout
+xml filepaths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start
