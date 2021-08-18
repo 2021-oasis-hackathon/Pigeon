@@ -9,9 +9,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
         android:layout_marginLeft="80dp"
-        android:text="앗, 분리수거 정보가 없어요, 없다고." />
+        android:layout_marginTop="250dp"
+        android:text="분리수거 정보가 없습니다." />
 
     <Button
         android:id="@+id/insert"
