@@ -4,142 +4,223 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:src="@drawable/ic_pic15">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="855dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/itemimage"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="100dp"
-            android:src="@drawable/ic_launcher_background" />
-
-
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/Barcodenum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="바코드 번호 :"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="23dp"
-                tools:layout_editor_absoluteY="0dp" />
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="731dp"
+                android:foreground="@drawable/overlay"
+                app:srcCompat="@drawable/ic_pic15" />
+        </FrameLayout>
 
-            <TextView
-                android:id="@+id/barcodenum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="바코드 번호 위치"
-                app:layout_constraintStart_toEndOf="@+id/Barcodenum"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="0dp" />
-        </LinearLayout>
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/Name"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_marginTop="28dp"
-                android:text="물품명 :"
-                app:layout_constraintTop_toBottomOf="@+id/Barcodenum"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="56dp" />
+                android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="물품명 위치"
-                app:layout_constraintStart_toEndOf="@+id/Name"
-                app:layout_constraintTop_toBottomOf="@+id/barcodenum"
-                tools:ignore="MissingConstraints" />
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginTop="41dp"
+                    android:fontFamily="@font/notosanscjkkr_regular"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="72sp"
+                    android:text="분리수거 방법"
+                    android:textColor="#191919"
+                    android:textSize="18sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp">
+                <ImageView
+                    android:id="@+id/itemimage"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="34dp"
+                    android:src="@drawable/ic_launcher_background" />
 
-            <TextView
-                android:id="@+id/Material"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="재질 :"
-                app:layout_constraintTop_toBottomOf="@+id/Name"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="65dp" />
-
-            <TextView
-                android:id="@+id/material"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="재질 위치"
-                app:layout_constraintStart_toEndOf="@+id/Material"
-                app:layout_constraintTop_toBottomOf="@+id/name"
-                tools:ignore="MissingConstraints" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="407dp"
-            android:layout_marginLeft="20dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/Recycle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="이렇게 버리세요! :"
-                app:layout_constraintTop_toBottomOf="@+id/Material"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="26dp" />
-
-            <TextView
-                android:id="@+id/recycle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="분리수거법 위치"
-                app:layout_constraintStart_toEndOf="@+id/Recycle"
-                app:layout_constraintTop_toBottomOf="@+id/material"
-                tools:ignore="MissingConstraints" />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="878dp"
+                    android:orientation="vertical">
 
 
-        <Button
-            android:id="@+id/Menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="16dp"
-            android:onClick="Menu"
-            android:text="메뉴로 돌아가기"
-            tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
 
-        </Button>
+                        <TextView
+                            android:id="@+id/Barcodenum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:text="바코드 번호 :"
+                            android:textColor="#191919"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="23dp"
+                            tools:layout_editor_absoluteY="0dp" />
 
-    </LinearLayout>
+                        <TextView
+                            android:id="@+id/barcodenum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:text="바코드 번호 위치"
+                            android:textColor="#191919"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@+id/Barcodenum"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="28dp"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:text="제품명 :"
+                            android:textColor="#191919"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:layout_constraintTop_toBottomOf="@+id/Barcodenum"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="56dp" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:text="물품명 위치"
+                            android:textColor="#191919"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@+id/Name"
+                            app:layout_constraintTop_toBottomOf="@+id/barcodenum"
+                            tools:ignore="MissingConstraints" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/Material"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:text="제품 재질 :"
+                            android:textColor="#191919"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:layout_constraintTop_toBottomOf="@+id/Name"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="65dp" />
+
+                        <TextView
+                            android:id="@+id/material"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:text="재질 위치"
+                            android:textColor="#191919"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@+id/Material"
+                            app:layout_constraintTop_toBottomOf="@+id/name"
+                            tools:ignore="MissingConstraints" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="407dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Recycle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:text="이렇게 버리세요! :"
+                            android:textColor="#191919"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:layout_constraintTop_toBottomOf="@+id/Material"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="26dp" />
+
+                        <TextView
+                            android:id="@+id/recycle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/notosanscjkkr_medium"
+                            android:text="분리수거법 위치"
+                            android:textColor="#191919"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            app:layout_constraintStart_toEndOf="@+id/Recycle"
+                            app:layout_constraintTop_toBottomOf="@+id/material"
+                            tools:ignore="MissingConstraints" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/Menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00FFFFFF"
+                        android:backgroundTint="#00FFFFFF"
+                        android:fontFamily="@font/notosanscjkkr_bold"
+                        android:gravity="center_horizontal"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="3sp"
+                        android:onClick="Menu"
+                        android:text="메뉴로 돌아가기"
+                        android:textColor="#005BAC"
+                        android:textSize="15sp"
+                        tools:ignore="MissingConstraints">
+
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

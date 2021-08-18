@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\st042\\Pigeon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\Pigeon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\st042\\Pigeon\\.gradle\\caches\\transforms-3\\8d8a2d80892ff2da442e5c831d29bfc1\\transformed\\jetified-zxing-android-embedded-3.4.0\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\mingyulee\\.gradle\\caches\\transforms-3\\e47bb33a2ff27ea3e62f20cd0f1e7732\\transformed\\jetified-zxing-android-embedded-3.4.0\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

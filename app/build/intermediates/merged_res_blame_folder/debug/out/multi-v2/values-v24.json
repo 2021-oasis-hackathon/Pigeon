@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\st042\\Pigeon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\Pigeon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\st042\\Pigeon\\.gradle\\caches\\transforms-3\\2fb21fbcddcb4a1a19c9cd01cfb49ddb\\transformed\\appcompat-1.3.1\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\mingyulee\\.gradle\\caches\\transforms-3\\2fb21fbcddcb4a1a19c9cd01cfb49ddb\\transformed\\appcompat-1.3.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\st042\\Pigeon\\.gradle\\caches\\transforms-3\\cabc7bf9fcd04c9bc88fe0c2ed8f8af4\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\mingyulee\\.gradle\\caches\\transforms-3\\cabc7bf9fcd04c9bc88fe0c2ed8f8af4\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
