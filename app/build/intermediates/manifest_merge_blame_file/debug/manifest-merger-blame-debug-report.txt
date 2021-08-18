@@ -11,15 +11,15 @@
 9-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:5:5-65
-11-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:5:22-62
+11-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:6:5-65
+11-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:6:22-62
 12
 13    <uses-feature android:name="android.hardware.camera" />
-13-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:7:5-60
-13-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:7:19-57
+13-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:8:5-60
+13-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:8:19-57
 14    <uses-feature android:name="android.hardware.camera.autofocus" />
-14-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:8:5-70
-14-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:8:19-67
+14-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:9:5-70
+14-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:9:19-67
 15
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\st042\Pigeon\.gradle\caches\transforms-3\d693b91d21b36f832bf546d1989be537\transformed\jetified-firebase-ui-auth-7.2.0\AndroidManifest.xml:12:5-79
@@ -61,76 +61,76 @@
 33-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\st042\Pigeon\.gradle\caches\transforms-3\a0e1850a15eec7e2ddf090e5c5c65b02\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:22-107
 34
 35    <application
-35-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:10:5-42:19
+35-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:11:5-44:19
 36        android:allowBackup="true"
-36-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:11:9-35
+36-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:12:9-35
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 37-->[androidx.core:core:1.5.0] C:\Users\st042\Pigeon\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 38        android:debuggable="true"
 39        android:hardwareAccelerated="true"
-39-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:12:9-43
+39-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:13:9-43
 40        android:icon="@mipmap/ic_launcher"
-40-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:13:9-43
+40-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:14:9-43
 41        android:label="@string/app_name"
-41-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:14:9-41
+41-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:15:9-41
 42        android:roundIcon="@mipmap/ic_launcher_round"
-42-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:15:9-54
+42-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:16:9-54
 43        android:supportsRtl="true"
-43-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:16:9-35
+43-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:17:9-35
 44        android:testOnly="true"
 45        android:theme="@style/Theme.Barcode" >
-45-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:17:9-45
+45-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:18:9-45
 46        <activity
-46-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:18:9-20:39
+46-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:19:9-21:39
 47            android:name="com.example.barcode.Reward"
-47-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:19:13-35
+47-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:20:13-35
 48            android:exported="true" />
-48-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:20:13-36
+48-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:21:13-36
 49        <activity
-49-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:21:9-23:39
+49-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:22:9-24:39
 50            android:name="com.example.barcode.TypingBarcodenumAct"
-50-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:22:13-48
+50-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:23:13-48
 51            android:exported="true" />
-51-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:23:13-36
+51-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:24:13-36
 52        <activity
-52-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:24:9-32:20
+52-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:25:9-33:20
 53            android:name="com.example.barcode.MainActivity"
-53-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:25:13-41
+53-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:26:13-41
 54            android:exported="true" >
-54-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:26:13-36
+54-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:27:13-36
 55            <intent-filter>
-55-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:27:13-31:29
+55-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:28:13-32:29
 56                <action android:name="android.intent.action.MAIN" />
-56-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:28:17-69
-56-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:28:25-66
+56-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:29:17-69
+56-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:29:25-66
 57
 58                <category android:name="android.intent.category.LAUNCHER" />
-58-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:30:17-77
-58-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:30:27-74
+58-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:31:17-77
+58-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:31:27-74
 59            </intent-filter>
 60        </activity>
 61        <activity
-61-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:33:9-37:63
+61-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:34:9-39:43
 62            android:name="com.example.barcode.CaptureAct"
-62-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:34:13-39
+62-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:35:13-39
 63            android:screenOrientation="fullSensor"
-63-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:35:13-51
+63-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:36:13-51
 64            android:stateNotNeeded="true"
-64-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:36:13-42
+64-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:37:13-42
 65            android:windowSoftInputMode="stateAlwaysHidden" />
-65-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:37:13-60
+65-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:38:13-60
 66        <activity android:name="com.example.barcode.MenuActivity" />
-66-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:38:9-50
-66-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:38:19-47
+66-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:40:9-50
+66-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:40:19-47
 67        <activity android:name="com.example.barcode.ShowList" />
-67-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:39:9-46
-67-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:39:19-43
+67-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:41:9-46
+67-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:41:19-43
 68        <activity android:name="com.example.barcode.CheckInsertAct" />
-68-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:40:9-52
-68-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:40:19-49
+68-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:42:9-52
+68-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:42:19-49
 69        <activity android:name="com.example.barcode.InsertRecycleAct" />
-69-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:41:9-54
-69-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:41:19-51
+69-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:43:9-54
+69-->C:\Users\st042\Pigeon\app\src\main\AndroidManifest.xml:43:19-51
 70
 71        <meta-data
 71-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\st042\Pigeon\.gradle\caches\transforms-3\d693b91d21b36f832bf546d1989be537\transformed\jetified-firebase-ui-auth-7.2.0\AndroidManifest.xml:16:9-18:69
