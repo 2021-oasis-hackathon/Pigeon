@@ -41,12 +41,12 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         mFirebaseAuth = FirebaseAuth.getInstance();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("User");
 
+        scanBtn = findViewById(R.id.scanBtn);
+        scanBtn.setOnClickListener(this);
+
         Intent intent = getIntent();
         String id = intent.getStringExtra("id"); //MainActivity로부터 전달받음
         int reward = intent.getIntExtra("reward", 0);
-
-        scanBtn = findViewById(R.id.scanBtn);
-        scanBtn.setOnClickListener(this);
 
         btn_rew = findViewById(R.id.btn_rew);
         btn_rew.setOnClickListener(new View.OnClickListener(){
@@ -56,13 +56,11 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(getApplicationContext(),Reward.class);
                 intent.putExtra("id",id); //uri라는 객체로 가져옴
                 intent.putExtra("reward",reward);
-
                 startActivity(intent);
             }
         });
 
     }
-
     private void scanCode(){
         IntentIntegrator integrator = new IntentIntegrator(this);
         integrator.setCaptureActivity(CaptureAct.class);
@@ -115,6 +113,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
 
     public void typingbarcode(View view){
 
+
         Intent intent = getIntent();
         String id = intent.getStringExtra("id");
 
@@ -132,9 +131,5 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent1);// 바코드 번호 타이핑 실행창 이동
             }
         });
-
-
     }
-
-
 }
