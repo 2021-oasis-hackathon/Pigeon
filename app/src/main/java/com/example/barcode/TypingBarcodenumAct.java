@@ -1,5 +1,6 @@
 package com.example.barcode;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -17,6 +18,10 @@ public class TypingBarcodenumAct extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_typing_barcode);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
         confirm = findViewById(R.id.confirm);
         typingbarcode = findViewById(R.id.typebarcode);
 

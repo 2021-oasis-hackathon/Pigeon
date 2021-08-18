@@ -11,15 +11,15 @@
 9-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:5:5-65
-11-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:5:22-62
+11-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:6:5-65
+11-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:6:22-62
 12
 13    <uses-feature android:name="android.hardware.camera" />
-13-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:7:5-60
-13-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:7:19-57
+13-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:8:5-60
+13-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:8:19-57
 14    <uses-feature android:name="android.hardware.camera.autofocus" />
-14-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:8:5-70
-14-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:8:19-67
+14-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:9:5-70
+14-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:9:19-67
 15
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\김민주\.gradle\caches\transforms-3\d693b91d21b36f832bf546d1989be537\transformed\jetified-firebase-ui-auth-7.2.0\AndroidManifest.xml:12:5-79
@@ -61,82 +61,82 @@
 33-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\김민주\.gradle\caches\transforms-3\a0e1850a15eec7e2ddf090e5c5c65b02\transformed\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:22-107
 34
 35    <application
-35-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:10:5-45:19
+35-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:11:5-47:19
 36        android:allowBackup="true"
-36-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:11:9-35
+36-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:12:9-35
 37        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 37-->[androidx.core:core:1.5.0] C:\Users\김민주\.gradle\caches\transforms-3\a6ed9dfb3abf7d8541f7a1d01bf1d39b\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 38        android:debuggable="true"
 39        android:hardwareAccelerated="true"
-39-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:12:9-43
+39-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:13:9-43
 40        android:icon="@mipmap/ic_launcher"
-40-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:13:9-43
+40-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:14:9-43
 41        android:label="@string/app_name"
-41-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:14:9-41
+41-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:15:9-41
 42        android:roundIcon="@mipmap/ic_launcher_round"
-42-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:15:9-54
+42-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:16:9-54
 43        android:supportsRtl="true"
-43-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:16:9-35
+43-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:17:9-35
 44        android:testOnly="true"
 45        android:theme="@style/Theme.Barcode" >
-45-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:17:9-45
+45-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:18:9-45
 46        <activity
-46-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:18:9-20:39
+46-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:19:9-21:39
 47            android:name="com.example.barcode.InsertCompleteAct"
-47-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:19:13-46
+47-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:20:13-46
 48            android:exported="true" />
-48-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:20:13-36
+48-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:21:13-36
 49        <activity
-49-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:21:9-23:39
+49-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:22:9-24:39
 50            android:name="com.example.barcode.Reward"
-50-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:22:13-35
+50-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:23:13-35
 51            android:exported="true" />
-51-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:23:13-36
+51-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:24:13-36
 52        <activity
-52-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:24:9-26:39
+52-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:25:9-27:39
 53            android:name="com.example.barcode.TypingBarcodenumAct"
-53-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:25:13-48
+53-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:26:13-48
 54            android:exported="true" />
-54-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:26:13-36
+54-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:27:13-36
 55        <activity
-55-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:27:9-35:20
+55-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:28:9-36:20
 56            android:name="com.example.barcode.MainActivity"
-56-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:28:13-41
+56-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:29:13-41
 57            android:exported="true" >
-57-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:29:13-36
+57-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:30:13-36
 58            <intent-filter>
-58-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:30:13-34:29
+58-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:31:13-35:29
 59                <action android:name="android.intent.action.MAIN" />
-59-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:31:17-69
-59-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:31:25-66
+59-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:32:17-69
+59-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:32:25-66
 60
 61                <category android:name="android.intent.category.LAUNCHER" />
-61-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:33:17-77
-61-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:33:27-74
+61-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:34:17-77
+61-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:34:27-74
 62            </intent-filter>
 63        </activity>
 64        <activity
-64-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:36:9-40:63
+64-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:37:9-42:43
 65            android:name="com.example.barcode.CaptureAct"
-65-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:37:13-39
+65-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:38:13-39
 66            android:screenOrientation="fullSensor"
-66-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:38:13-51
+66-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:39:13-51
 67            android:stateNotNeeded="true"
-67-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:39:13-42
+67-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:40:13-42
 68            android:windowSoftInputMode="stateAlwaysHidden" />
-68-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:40:13-60
+68-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:41:13-60
 69        <activity android:name="com.example.barcode.MenuActivity" />
-69-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:41:9-50
-69-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:41:19-47
+69-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:43:9-50
+69-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:43:19-47
 70        <activity android:name="com.example.barcode.ShowList" />
-70-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:42:9-46
-70-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:42:19-43
+70-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:44:9-46
+70-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:44:19-43
 71        <activity android:name="com.example.barcode.CheckInsertAct" />
-71-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:43:9-52
-71-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:43:19-49
+71-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:45:9-52
+71-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:45:19-49
 72        <activity android:name="com.example.barcode.InsertRecycleAct" />
-72-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:44:9-54
-72-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:44:19-51
+72-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:46:9-54
+72-->C:\android-sdk\Barcode\app\src\main\AndroidManifest.xml:46:19-51
 73
 74        <meta-data
 74-->[com.firebaseui:firebase-ui-auth:7.2.0] C:\Users\김민주\.gradle\caches\transforms-3\d693b91d21b36f832bf546d1989be537\transformed\jetified-firebase-ui-auth-7.2.0\AndroidManifest.xml:16:9-18:69

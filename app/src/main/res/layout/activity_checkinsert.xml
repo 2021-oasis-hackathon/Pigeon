@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CheckInsertAct">
@@ -9,31 +11,41 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="250dp"
-        android:text="분리수거 정보가 없습니다." />
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="125dp"
+        android:text="분리수거 정보가 없습니다."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/insert"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
         android:layout_weight="1"
         android:onClick="insert"
-        android:text="분리수거 정보 입력하기" />
+        android:text="분리수거 정보 입력"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/backtomenu"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/backtomenu"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
-        android:layout_marginTop="300dp"
-        android:layout_toRightOf="@+id/insert"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/insert"
         android:layout_weight="1"
         android:onClick="backtomenu"
-        android:text="메뉴로 돌아가기" />
+        android:text="메뉴로 돌아가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

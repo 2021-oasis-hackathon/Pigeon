@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,6 +35,9 @@ public class ShowList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_show);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true); //기존 성능 강화
