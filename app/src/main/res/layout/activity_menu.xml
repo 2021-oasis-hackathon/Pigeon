@@ -10,34 +10,63 @@
 
     <Button
         android:id="@+id/scanBtn"
-        android:layout_width="221dp"
-        android:layout_height="wrap_content"
+        android:layout_width="328dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="16dp"
+        android:foreground="@drawable/ic_pic02"
         android:text="scan"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <Button
         android:id="@+id/btn_rew"
-        android:layout_width="221dp"
-        android:layout_height="wrap_content"
-        android:text="리워드 확인"
+        android:layout_width="328dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:foreground="@drawable/ic_pic04"
         android:onClick="onClick"
+        android:text="리워드 확인"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_typing" />
 
     <Button
         android:id="@+id/btn_typing"
-        android:layout_width="221dp"
-        android:layout_height="wrap_content"
-        android:text="바코드 번호 입력하기"
+        android:layout_width="328dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:foreground="@drawable/ic_pic03"
         android:onClick="typingbarcode"
+        android:text="바코드 번호 입력하기"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scanBtn" />
+
+    <TextView
+        android:id="@+id/textView8"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="67dp"
+        android:fontFamily="@font/notosanscjkkr_bold"
+        android:gravity="center_horizontal"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="11sp"
+        android:text="바코드를 스캔해\n제품의 분리수거 방법을\n확인하세요"
+        android:textColor="#191919"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
