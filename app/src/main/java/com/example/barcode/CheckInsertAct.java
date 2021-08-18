@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CheckInsertAct extends AppCompatActivity{
@@ -16,7 +17,8 @@ public class CheckInsertAct extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkinsert);
 
-
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
     }
 
