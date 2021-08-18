@@ -69,10 +69,10 @@ public class InsertRecycleAct extends AppCompatActivity {
                 addrecycle.setRecycle(Recycle);
                 // setValue : database에 insert (삽입)
                 mDatabaseRef.child(insertedthing.getBarcodenum()).setValue(insertedthing);
-                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                Intent intent = new Intent(getApplicationContext(), InsertCompleteAct.class);
                 intent.putExtra("id",id);
                 intent.putExtra("reward",reward[0]);
-                Toast.makeText(getApplicationContext(), "추가되었습니다.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "등록되었습니다!", Toast.LENGTH_SHORT).show();
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
                 finish();

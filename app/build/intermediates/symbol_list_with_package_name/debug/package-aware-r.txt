@@ -2226,6 +2226,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton
 id immediateStop
 id included
 id info
@@ -2609,6 +2610,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_checkinsert
 layout activity_insert
+layout activity_insert_complete
 layout activity_main
 layout activity_menu
 layout activity_reward

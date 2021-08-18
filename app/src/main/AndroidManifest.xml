@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Barcode">
         <activity
+            android:name=".InsertCompleteAct"
+            android:exported="true" />
+        <activity
             android:name=".Reward"
             android:exported="true" />
         <activity

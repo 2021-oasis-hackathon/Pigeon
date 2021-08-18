@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\st042\\Pigeon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-he\\values-he.xml",
+            "outputFile": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-he\\values-he.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\st042\\Pigeon\\.gradle\\caches\\transforms-3\\8d8a2d80892ff2da442e5c831d29bfc1\\transformed\\jetified-zxing-android-embedded-3.4.0\\res\\values-he\\values-he.xml",
+                    "source": "C:\\Users\\김민주\\.gradle\\caches\\transforms-3\\a7e53a33f649f49f4cd4864e444a2839\\transformed\\jetified-zxing-android-embedded-3.4.0\\res\\values-he\\values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
