@@ -35,7 +35,7 @@
         android:lineSpacingExtra="9sp"
         android:text="상품의 분리수거 방법을\n 등록하고 리워드를\n받으시겠습니까"
         android:textColor="#191919"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +54,7 @@
         android:lineSpacingExtra="9sp"
         android:text="앗! 해당 제품의\n분리수거 방법이\n등록되어 있지 않습니다."
         android:textColor="#ff3120"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -63,7 +63,7 @@
         android:id="@+id/insert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
+        android:layout_marginStart="52dp"
         android:layout_marginBottom="100dp"
         android:layout_weight="1"
         android:background="#00FFFFFF"
@@ -72,10 +72,10 @@
         android:gravity="center_horizontal"
         android:letterSpacing="-0.03"
         android:lineSpacingExtra="3sp"
-        android:textColor="#005BAC"
-        android:textSize="15sp"
         android:onClick="insert"
         android:text="분리수거 방법 \n등록하기"
+        android:textColor="#005BAC"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -83,7 +83,7 @@
         android:id="@+id/backtomenu"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="52dp"
         android:layout_marginBottom="100dp"
         android:layout_toEndOf="@+id/insert"
         android:layout_weight="1"
@@ -96,7 +96,7 @@
         android:onClick="backtomenu"
         android:text="메인으로\n 돌아가기"
         android:textColor="#ff3120"
-        android:textSize="15sp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

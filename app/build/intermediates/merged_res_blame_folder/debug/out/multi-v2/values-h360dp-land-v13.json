@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\Pigeon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\김민주\\.gradle\\caches\\transforms-3\\a4db12b072650e13bc36a4fc9443bd47\\transformed\\material-1.4.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+                    "source": "C:\\Users\\mingyulee\\.gradle\\caches\\transforms-3\\a4db12b072650e13bc36a4fc9443bd47\\transformed\\material-1.4.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

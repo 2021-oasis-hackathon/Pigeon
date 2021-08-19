@@ -19,7 +19,7 @@
         android:lineSpacingExtra="6sp"
         android:text="바코드에 적힌\n숫자를 입력해주세요"
         android:textColor="#191919"
-        android:textSize="24sp"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,7 +31,7 @@
         android:layout_marginTop="164dp"
         android:textColorHint="#4e4e4e"
         android:fontFamily="@font/notosanscjkkr_medium"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textColor="#191919"
         android:ems="10"
         android:hint="바코드 번호를 입력해주세요."

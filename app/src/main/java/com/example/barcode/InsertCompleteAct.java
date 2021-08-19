@@ -1,5 +1,6 @@
 package com.example.barcode;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,6 +13,9 @@ public class InsertCompleteAct extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert_complete);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
     }
 
     public void backtomenu(View view){

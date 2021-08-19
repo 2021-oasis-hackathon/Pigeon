@@ -9,6 +9,22 @@
     <TextView
         android:id="@+id/tv_reward_pres"
         android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="74sp"
+        android:text="당신의 현재 리워드는?"
+        android:textColor="#191919"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reward_pres2" />
+
+    <TextView
+        android:id="@+id/tv_reward_pres2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="sans-serif"
@@ -16,28 +32,30 @@
         android:lineSpacingExtra="74sp"
         android:text="당신의 현재 리워드는?"
         android:textColor="#191919"
-        android:textSize="16sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="184dp"
+        android:layout_height="28dp"
         android:layout_marginTop="352dp"
+        android:layout_marginBottom="60dp"
         android:layout_weight="1"
         android:background="#00FFFFFF"
         android:backgroundTint="#00FFFFFF"
         android:fontFamily="@font/notosanscjkkr_bold"
+        android:foreground="@drawable/ic_pic16"
         android:gravity="center_horizontal"
         android:letterSpacing="-0.03"
-        android:lineSpacingExtra="3sp"
         android:onClick="returntoMenu"
-        android:text="메뉴로 돌아가기"
         android:textColor="#005BAC"
         android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,4 +79,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_reward_pres"
         app:srcCompat="@drawable/ic_pic06" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="253dp"
+        android:layout_height="161dp"
+        android:layout_marginBottom="80dp"
+        android:foreground="@drawable/overlay"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.486"
+        app:srcCompat="@drawable/ic_pic07" />
 </androidx.constraintlayout.widget.ConstraintLayout>

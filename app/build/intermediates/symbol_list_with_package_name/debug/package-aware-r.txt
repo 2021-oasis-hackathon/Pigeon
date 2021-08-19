@@ -1924,6 +1924,7 @@ drawable ic_pic03
 drawable ic_pic04
 drawable ic_pic05
 drawable ic_pic06
+drawable ic_pic07
 drawable ic_pic08
 drawable ic_pic09
 drawable ic_pic10
@@ -1933,6 +1934,7 @@ drawable ic_pic13
 drawable ic_pic14
 drawable ic_pic15
 drawable ic_pic16
+drawable ic_pic17
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1975,8 +1977,6 @@ drawable water
 font notosanscjkkr_bold
 font notosanscjkkr_medium
 font notosanscjkkr_regular
-font notosansmonocjkkr_bold
-font notosansmonocjkkr_regular
 font roboto_bold
 font roboto_medium
 font roboto_regular
@@ -2260,6 +2260,8 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
+id imageView7
+id imageView8
 id img1
 id immediateStop
 id included
@@ -2284,6 +2286,8 @@ id line3
 id linear
 id linearLayout
 id linearLayout2
+id linearLayout3
+id linearLayout4
 id listMode
 id list_item
 id logo
@@ -2417,6 +2421,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -2501,6 +2506,7 @@ id textStart
 id textTop
 id textView
 id textView10
+id textView12
 id textView2
 id textView3
 id textView4
@@ -2508,6 +2514,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2539,6 +2546,7 @@ id triangle
 id trouble_signing_in
 id trouble_signing_in_possible_fixes
 id tv_reward_pres
+id tv_reward_pres2
 id typebarcode
 id unchecked
 id uniform

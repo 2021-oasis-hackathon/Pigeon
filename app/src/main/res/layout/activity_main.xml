@@ -11,7 +11,7 @@
         android:id="@+id/btn_google"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -21,7 +21,6 @@
         android:layout_width="0dp"
         android:layout_height="458dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="45dp"
         android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +29,7 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="461dp"
             app:srcCompat="@drawable/ic_pic01" />
     </FrameLayout>
 
@@ -38,7 +37,8 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="380dp"
         android:layout_marginEnd="61dp"
         android:background="#00FFFFFF"
         android:backgroundTint="#00FFFFFF"
@@ -47,24 +47,24 @@
         android:lineSpacingExtra="8sp"
         android:text="눈 앞의 그 물건,\n어떻게 버려야할까요"
         android:textColor="#191919"
-        android:textSize="30sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="520dp"
         android:fontFamily="@font/notosanscjkkr_regular"
         android:letterSpacing="-0.03"
         android:lineSpacingExtra="34sp"
-        android:text="먼저 로그인을 진행해주세요"
+        android:text="  먼저 로그인을 진행해주세요"
         android:textColor="#4e4e4e"
-        android:textSize="10sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

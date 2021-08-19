@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\android-sdk\\Barcode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\Pigeon\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\김민주\\.gradle\\caches\\transforms-3\\a4db12b072650e13bc36a4fc9443bd47\\transformed\\material-1.4.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\mingyulee\\.gradle\\caches\\transforms-3\\a4db12b072650e13bc36a4fc9443bd47\\transformed\\material-1.4.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
